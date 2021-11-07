@@ -1,9 +1,9 @@
 :root {
-  --grid-quarter: 2px;
-  --grid-half: 4px;
-  --grid-one: 8px;
-  --grid-two: 16px;
-  --grid-three: 24px;
-  --grid-four: 32px;
-  --grid-five: 40px;
+  --maja-grid-quarter: 2px;
+  --maja-grid-half: 4px;
+  --maja-grid-one: 8px;
+  --maja-grid-two: 16px;
+  --maja-grid-three: 24px;
+  --maja-grid-four: 32px;
+  --maja-grid-five: 40px;
 }

@@ -1,11 +1,11 @@
 .maja-button {
-  padding: var(--grid-half) var(--grid-one);
+  padding: var(--maja-grid-half) var(--maja-grid-one);
   text-align: center;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: auto;
   grid-auto-flow: column;
-  grid-column-gap: var(--grid-one);
+  grid-column-gap: var(--maja-grid-one);
   justify-content: center;
   align-items: center;
   border-radius: var(--maja-ui-border-radius--inline);

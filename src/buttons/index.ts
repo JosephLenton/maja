@@ -1,4 +1,4 @@
 export * from './maja-bare-button'
 export * from './maja-button'
-export * from './link-button'
-export * from './new-button'
+export * from './maja-link-button'
+export * from './maja-new-button'

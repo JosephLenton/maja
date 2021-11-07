@@ -1,0 +1,12 @@
+.maja-h-base {
+  color: var(--maja-ui-text);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  font-family: var(--font-family-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

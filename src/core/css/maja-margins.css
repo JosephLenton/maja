@@ -1,6 +1,5 @@
 :root {
-  --margin-space: var(--grid-one);
-
-  --margin: var(--grid-two);
-  --margin--large: var(--grid-four);
+  --maja-margin-space: var(--maja-grid-one);
+  --maja-margin: var(--maja-grid-two);
+  --maja-margin--large: var(--maja-grid-four);
 }

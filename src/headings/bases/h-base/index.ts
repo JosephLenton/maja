@@ -1,1 +1,1 @@
-export * from './h-base'
+export * from './maja-h-base'
