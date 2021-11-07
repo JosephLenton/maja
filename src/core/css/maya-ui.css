@@ -1,0 +1,26 @@
+:root {
+  --maya-ui-text: var(--maya-color--white);
+  --maya-ui-text--selectable: var(--maya-color--white);
+  --maya-ui-text--selected: var(--maya-color--white);
+  --maya-ui-text--unselected: var(--maya-color-light-x-grey);
+  --maya-ui-text--disabled: var(--maya-color-grey);
+
+  --maya-ui-background: var(--maya-color-dark-xxx-grey);
+  --maya-ui-background--primary: var(--maya-color-dark-xx-grey);
+  --maya-ui-background--selected: var(--maya-color-dark-grey);
+  --maya-ui-background--selectable: var(--maya-color-dark-x-grey);
+  --maya-ui-background--unselected: var(--maya-color-dark-xxx-grey);
+
+  --maya-ui-border: var(--maya-color-black);
+  --maya-ui-border--selectable: var(--maya-color-grey);
+  --maya-ui-border--selected: var(--maya-color--white);
+  --maya-ui-border--unselected: transparent;
+  --maya-ui-border--disabled: transparent;
+  --maya-ui-border--error: var(--maya-color-red);
+
+  --maya-ui-border-radius--inline: 2px;
+  --maya-ui-border-radius--block: 6px;
+
+  --maya-ui-shadow-colour: rgba(0, 0, 0, 0.4);
+  --maya-ui-shadow-colour--light: rgba(0, 0, 0, 0.15);
+}

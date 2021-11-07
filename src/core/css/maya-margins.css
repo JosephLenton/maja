@@ -1,0 +1,6 @@
+:root {
+  --margin-space: var(--grid-one);
+
+  --margin: var(--grid-two);
+  --margin--large: var(--grid-four);
+}

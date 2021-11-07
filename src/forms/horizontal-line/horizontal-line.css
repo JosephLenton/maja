@@ -1,0 +1,7 @@
+.horizontal-line {
+  height: 0;
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid var(--maya-color-dark-grey);
+  visibility: visible;
+}

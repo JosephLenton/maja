@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+
+    "lib": ["esnext", "dom", "dom.iterable"],
+
+    // "outDir": "lib",
+    "declaration": true,
+    "declarationDir": ".",
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+
+    "allowSyntheticDefaultImports": true,
+
+    "pretty": true,
+    "sourceMap": true,
+
+    "paths": {
+      "~*": ["./*"]
+    },
+
+    "typeRoots": [
+      "./src/declarations/**/*.d.ts"
+    ],
+
+    "skipLibCheck": true,
+
+    "plugins": [
+      {
+          "transform": "@zerollup/ts-transform-paths",
+          "exclude": ["*"]
+      }
+    ]
+  },
+
+  "include": [
+    "src",
+  ],
+
+  "exclude": [
+    "node_modules",
+    "dist",
+  ]
+}

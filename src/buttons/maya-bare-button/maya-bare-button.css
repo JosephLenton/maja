@@ -1,0 +1,18 @@
+.maya-bare-button {
+  padding: 0;
+  text-align: start;
+
+  &:hover {
+    color: var(--maya-ui-text--selectable);
+  }
+
+  &--selected,
+  &--selected:hover {
+    color: var(--maya-ui-text--selected);
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    color: var(--maya-ui-text--disabled);
+  }
+}

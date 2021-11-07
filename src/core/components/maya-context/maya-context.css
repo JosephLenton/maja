@@ -1,0 +1,29 @@
+.maya-context {
+  color: var(--maya-ui-text);
+  font-family: var(--font-family-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  height: 100%;
+  max-height: 100%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--maya-ui-background);
+
+  /* Disable Back and Forward swipes in Chrome. */
+  overscroll-behavior-x: none;
+
+  & * {
+    color: inherit;
+  }
+}

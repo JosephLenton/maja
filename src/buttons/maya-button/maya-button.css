@@ -1,0 +1,24 @@
+.maya-button {
+  padding: var(--grid-half) var(--grid-one);
+  text-align: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: var(--grid-one);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--maya-ui-border-radius--inline);
+
+  &:hover {
+    background: var(--maya-ui-background--selectable);
+  }
+
+  &--selected,
+  &--selected:hover {
+    background: var(--maya-ui-background--selected);
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    background: transparent;
+  }
+}

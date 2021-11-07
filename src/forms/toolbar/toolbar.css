@@ -1,0 +1,6 @@
+.toolbar {
+  display: grid;
+  grid-auto-rows: min-content;
+  overflow-y: auto;
+  justify-items: flex-start;
+}

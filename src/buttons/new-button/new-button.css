@@ -1,0 +1,27 @@
+.new-button {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: var(--grid-one);
+  justify-content: center;
+  align-items: center;
+  min-width: 48px;
+  min-height: 48px;
+  padding: var(--margin-space);
+  box-sizing: content-box;
+
+  &__inner {
+    color: inherit;
+    border: 1px dashed transparent;
+    border-color: inherit;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: var(--font-size-large);
+    height: 100%;
+    width: 100%;
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 48px;
+    max-height: 48px;
+  }
+}

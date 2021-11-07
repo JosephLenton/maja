@@ -1,0 +1,19 @@
+.select {
+  background: var(--maya-ui-background);
+  border: 1px solid var(--maya-ui-border--unselected);
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 13px;
+
+  &:hover {
+    color: var(--maya-ui-text--selectable);
+  }
+
+  &--selected {
+    color: var(--maya-ui-text--selected);
+  }
+
+  &--disabled {
+    color: var(--maya-ui-text--disabled);
+  }
+}
