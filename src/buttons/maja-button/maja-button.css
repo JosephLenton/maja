@@ -1,20 +1,22 @@
-.maya-button {
+.maja-button {
   padding: var(--grid-half) var(--grid-one);
   text-align: center;
   display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
   grid-auto-flow: column;
   grid-column-gap: var(--grid-one);
   justify-content: center;
   align-items: center;
-  border-radius: var(--maya-ui-border-radius--inline);
+  border-radius: var(--maja-ui-border-radius--inline);
 
   &:hover {
-    background: var(--maya-ui-background--selectable);
+    background: var(--maja-ui-background--selectable);
   }
 
   &--selected,
   &--selected:hover {
-    background: var(--maya-ui-background--selected);
+    background: var(--maja-ui-background--selected);
   }
 
   &--disabled,

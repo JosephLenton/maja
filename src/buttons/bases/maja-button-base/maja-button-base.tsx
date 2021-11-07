@@ -1,14 +1,14 @@
 import React from 'react'
 import classnames from 'classnames'
 
-import './maya-button-base.css'
+import './maja-button-base.css'
 
-export interface ButtonBaseProps extends ButtonCoreProps {
+export interface MajaButtonBaseProps extends MajaButtonCoreProps {
   element?: 'div' | 'button' | 'a'
   baseClassName: string
 }
 
-export interface ButtonCoreProps {
+export interface MajaButtonCoreProps {
   className ?: string
   selected ?: boolean
   disabled ?: boolean
@@ -16,11 +16,11 @@ export interface ButtonCoreProps {
   tooltip ?: string
 }
 
-export const ButtonBase : React.FunctionComponent<ButtonBaseProps> = props => {
+export const MajaButtonBase : React.FunctionComponent<MajaButtonBaseProps> = props => {
   const className = classnames({
-    'maya-button-base': true,
-    'maya-button-base--selected': props.selected,
-    'maya-button-base--disabled': props.disabled,
+    'maja-button-base': true,
+    'maja-button-base--selected': props.selected,
+    'maja-button-base--disabled': props.disabled,
     [props.baseClassName]: true,
     [`${props.baseClassName}--selected`]: props.selected,
     [`${props.baseClassName}--disabled`]: props.disabled,

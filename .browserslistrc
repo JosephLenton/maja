@@ -1,0 +1,10 @@
+cover 85%
+last 1.5 years
+not ie <= 11
+not < 0.025%
+not dead
+not and_uc < 100
+not op_mini all
+not ie_mob <= 11
+not iOS < 10.3
+not kaios < 100

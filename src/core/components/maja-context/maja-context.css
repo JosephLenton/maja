@@ -1,5 +1,5 @@
-.maya-context {
-  color: var(--maya-ui-text);
+.maja-context {
+  color: var(--maja-ui-text);
   font-family: var(--font-family-normal);
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-normal);
@@ -18,7 +18,7 @@
 
   overflow-x: hidden;
   overflow-y: auto;
-  background: var(--maya-ui-background);
+  background: var(--maja-ui-background);
 
   /* Disable Back and Forward swipes in Chrome. */
   overscroll-behavior-x: none;

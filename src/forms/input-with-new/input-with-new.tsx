@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { Button } from '../../buttons/maya-button'
+import { Button } from '../../buttons/maja-button'
 import { Input } from '../input'
 
 import './input-with-new.css'

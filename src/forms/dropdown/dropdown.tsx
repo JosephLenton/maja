@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button } from "~buttons/maya-button"
+import { Button } from "~buttons/maja-button"
 import classnames from 'classnames'
 import { Card } from '~forms/card'
 import { LinkButton } from '~buttons/link-button'

@@ -1,11 +1,11 @@
-.maya-button-base {
+.maja-button-base {
   background: transparent;
-  border: 0 solid var(--maya-ui-border--unselected);
+  border: 0 solid var(--maja-ui-border--unselected);
   cursor: pointer;
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: var(--font-size-normal);
-  color: var(--maya-ui-text--unselected);
+  color: var(--maja-ui-text--unselected);
   flex-shrink: 0;
   font-family: var(--font-family-normal);
   font-weight: var(--font-weight-normal);
@@ -14,19 +14,19 @@
   -moz-osx-font-smoothing: grayscale;
 
   &:hover {
-    border-color: var(--maya-ui-border--selectable);
-    color: var(--maya-ui-text--selectable);
+    border-color: var(--maja-ui-border--selectable);
+    color: var(--maja-ui-text--selectable);
   }
 
   &--selected,
   &--selected:hover {
-    border-color: var(--maya-ui-border--selected);
-    color: var(--maya-ui-text--selected);
+    border-color: var(--maja-ui-border--selected);
+    color: var(--maja-ui-text--selected);
   }
 
   &--disabled,
   &--disabled:hover {
-    border-color: var(--maya-ui-border--disabled);
-    color: var(--maya-ui-text--disabled);
+    border-color: var(--maja-ui-border--disabled);
+    color: var(--maja-ui-text--disabled);
   }
 }

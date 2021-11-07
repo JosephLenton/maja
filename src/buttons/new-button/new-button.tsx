@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonBase } from '~buttons/bases/maya-button-base'
+import { MajaButtonBase } from '~buttons/bases/maja-button-base'
 
 import './new-button.css'
 
@@ -10,12 +10,12 @@ export interface NewButtonProps {
 }
 
 export const NewButton : React.FunctionComponent<NewButtonProps> = props => {
-  return <ButtonBase
+  return <MajaButtonBase
       baseClassName="new-button"
       {...props}
   >
     <div className="new-button__inner">
       +
     </div>
-  </ButtonBase>
+  </MajaButtonBase>
 }

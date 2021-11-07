@@ -1,0 +1,26 @@
+:root {
+  --maja-ui-text: var(--maja-color--white);
+  --maja-ui-text--selectable: var(--maja-color--white);
+  --maja-ui-text--selected: var(--maja-color--white);
+  --maja-ui-text--unselected: var(--maja-color-light-x-grey);
+  --maja-ui-text--disabled: var(--maja-color-grey);
+
+  --maja-ui-background: var(--maja-color-dark-xxx-grey);
+  --maja-ui-background--primary: var(--maja-color-dark-xx-grey);
+  --maja-ui-background--selected: var(--maja-color-dark-grey);
+  --maja-ui-background--selectable: var(--maja-color-dark-x-grey);
+  --maja-ui-background--unselected: var(--maja-color-dark-xxx-grey);
+
+  --maja-ui-border: var(--maja-color-black);
+  --maja-ui-border--selectable: var(--maja-color-grey);
+  --maja-ui-border--selected: var(--maja-color--white);
+  --maja-ui-border--unselected: transparent;
+  --maja-ui-border--disabled: transparent;
+  --maja-ui-border--error: var(--maja-color-red);
+
+  --maja-ui-border-radius--inline: 2px;
+  --maja-ui-border-radius--block: 6px;
+
+  --maja-ui-shadow-colour: rgba(0, 0, 0, 0.4);
+  --maja-ui-shadow-colour--light: rgba(0, 0, 0, 0.15);
+}

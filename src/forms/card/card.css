@@ -1,14 +1,14 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: end;
-  border: 1px solid var(--maya-ui-border);
-  box-shadow: 0 2px 4px var(--maya-ui-shadow-colour);
-  border-radius: var(--maya-ui-border-radius--block);
+  justify-content: flex-start;
+  align-items: flex-end;
+  border: 1px solid var(--maja-ui-border);
+  box-shadow: 0 2px 4px var(--maja-ui-shadow-colour);
+  border-radius: var(--maja-ui-border-radius--block);
   box-sizing: border-box;
   padding: var(--margin);
-  background: var(--maya-ui-background);
+  background: var(--maja-ui-background);
 
   &--padding-small {
     padding: var(--margin-space) var(--margin-space);

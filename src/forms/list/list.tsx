@@ -1,6 +1,6 @@
 import React from 'react'
 import { ListBase } from '~forms/bases/list-base'
-import { Button } from '~buttons/maya-button'
+import { Button } from '~buttons/maja-button'
 
 import './list.css'
 

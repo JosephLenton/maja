@@ -1,7 +1,7 @@
 .input {
   background: black;
-  color: var(--maya-ui-text);
-  border: 1px solid var(--maya-ui-border);
+  color: var(--maja-ui-text);
+  border: 1px solid var(--maja-ui-border);
   border-radius: 0;
   border-left: none;
   border-right: none;
@@ -14,20 +14,20 @@
   -moz-osx-font-smoothing: grayscale;
 
   &--disabled {
-    border-color: var(--maya-ui-text--disabled);
+    border-color: var(--maja-ui-text--disabled);
   }
 
   &:hover {
-    border-color: var(--maya-ui-border--selectable);
-    color: var(--maya-ui-text--selectable);
+    border-color: var(--maja-ui-border--selectable);
+    color: var(--maja-ui-text--selectable);
   }
 
   &:focus {
-    border-color: var(--maya-ui-border--selected);
-    color: var(--maya-ui-text--selected);
+    border-color: var(--maja-ui-border--selected);
+    color: var(--maja-ui-text--selected);
   }
 
   &:invalid {
-    border-color: var(--maya-ui-border--error);
+    border-color: var(--maja-ui-border--error);
   }
 }

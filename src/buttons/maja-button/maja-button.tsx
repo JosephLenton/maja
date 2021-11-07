@@ -1,14 +1,14 @@
 import React from 'react'
 import { MajaButtonBase, MajaButtonCoreProps } from '~buttons/bases/maja-button-base'
 
-import './link-button.css'
+import './maja-button.css'
 
-export interface LinkButtonProps extends MajaButtonCoreProps {
+export interface ButtonProps extends MajaButtonCoreProps {
 }
 
-export const LinkButton : React.FunctionComponent<LinkButtonProps> = props => {
+export const Button : React.FunctionComponent<ButtonProps> = props => {
   return <MajaButtonBase
-      baseClassName="link-button"
+      baseClassName="maja-button"
       {...props}
   >
     {props.children}
