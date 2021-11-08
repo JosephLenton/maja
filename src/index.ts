@@ -1,4 +1,4 @@
-import { concatClassNames } from '~util/concat-class-names'
+import { concatClassNames } from '@/util/concat-class-names'
 
 export * from './core'
 export * from './buttons'

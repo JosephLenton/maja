@@ -11,6 +11,15 @@ export default {
   },
   plugins: [
     postcss(),
-    typescript({ tsconfig: './tsconfig.json', typescript: ttypescript })
+    typescript({
+      tsconfig: './tsconfig.json',
+      typescript: ttypescript,
+      exclude: [
+        "**/__tests__",
+        "**/*.test.ts",
+        "**/*.stories.ts",
+        "**/*.stories.tsx",
+      ],
+    })
   ]
 };

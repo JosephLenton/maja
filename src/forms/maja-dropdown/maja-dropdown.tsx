@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Button } from "~buttons/maja-button"
+import { Button } from '@/buttons/maja-button'
 import classnames from 'classnames'
-import { Card } from '~forms/maja-card'
-import { LinkButton } from '~buttons/maja-link-button'
+import { Card } from '@/forms/maja-card'
+import { LinkButton } from '@/buttons/maja-link-button'
 
 import './maja-dropdown.css'
 

@@ -11,7 +11,9 @@
     "build": "yarn run clean && yarn run build:src",
     "build:src": "rollup --config ./rollup.config.ts --configPlugin typescript",
     "clean": "yarn run clean:build",
-    "clean:build": "rimraf ./lib/*"
+    "clean:build": "rimraf ./lib/*",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -19,11 +21,18 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/cli": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@types/react": "^17.0.34",
     "@types/react-dom": "^17.0.11",
-    "@zerollup/ts-transform-paths": "^1.7.18",
     "autoprefixer": "9.8.5",
+    "babel-loader": "^8.2.3",
     "postcss": "^8.3.11",
     "postcss-custom-media": "7.0.8",
     "postcss-extend": "1.0.5",
@@ -34,6 +43,7 @@
     "rollup-plugin-postcss": "^4.0.1",
     "tslib": "^2.3.1",
     "ttypescript": "^1.5.12",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "typescript-transform-paths": "^3.3.1"
   }
 }
