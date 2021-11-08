@@ -17,8 +17,8 @@
     position: absolute;
     right: 0;
     top: calc(100% + var(--maja-grid-quarter));
-    font-size: var(--font-size-small);
-    line-height: var(--font-size-x-small);
+    font-size: var(--maja-font-size-small);
+    line-height: var(--maja-font-size-x-small);
   }
 
   &--open {

@@ -7,9 +7,9 @@
   border-right: none;
   padding: 4px 8px;
 
-  font-family: var(--font-family-normal);
-  font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-normal);
+  font-family: var(--maja-font-family-normal);
+  font-weight: var(--maja-font-weight-normal);
+  font-size: var(--maja-font-size-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
