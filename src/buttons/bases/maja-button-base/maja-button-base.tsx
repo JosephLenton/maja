@@ -3,12 +3,12 @@ import classnames from 'classnames'
 
 import './maja-button-base.css'
 
-export interface MajaButtonBaseProps extends MajaButtonCoreProps {
+export interface ButtonBaseProps extends ButtonCoreProps {
   element?: 'div' | 'button' | 'a'
   baseClassName: string
 }
 
-export interface MajaButtonCoreProps {
+export interface ButtonCoreProps {
   className ?: string
   selected ?: boolean
   disabled ?: boolean
@@ -16,7 +16,7 @@ export interface MajaButtonCoreProps {
   tooltip ?: string
 }
 
-export const MajaButtonBase : React.FunctionComponent<MajaButtonBaseProps> = props => {
+export const ButtonBase : React.FunctionComponent<ButtonBaseProps> = props => {
   const className = classnames({
     'maja-button-base': true,
     'maja-button-base--selected': props.selected,

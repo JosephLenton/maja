@@ -3,10 +3,10 @@ import { MajaButtonBase, MajaButtonCoreProps } from '@/buttons/bases/maja-button
 
 import './maja-button.css'
 
-export interface MajaButtonProps extends MajaButtonCoreProps {
+export interface ButtonProps extends MajaButtonCoreProps {
 }
 
-export const Button : React.FunctionComponent<MajaButtonProps> = props => {
+export const Button : React.FunctionComponent<ButtonProps> = props => {
   return <MajaButtonBase
       baseClassName="maja-button"
       {...props}

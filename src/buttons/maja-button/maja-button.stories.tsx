@@ -1,7 +1,7 @@
 import '@/core/css'
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { Button as ButtonComponent, MajaButtonProps } from '.'
+import { Button as ButtonComponent, ButtonProps } from '.'
 
 export default {
   title: 'Buttons/Button',
@@ -9,7 +9,7 @@ export default {
   argTypes: {},
 } as ComponentMeta<typeof ButtonComponent>
 
-const Template: ComponentStory<typeof ButtonComponent> = (props: MajaButtonProps) => {
+const Template: ComponentStory<typeof ButtonComponent> = (props: ButtonProps) => {
   return <ButtonComponent {...props}>{props.children || 'Click me'}</ButtonComponent>
 }
 
