@@ -1,4 +1,4 @@
-import { Card } from '@'
+import { MajaContext, Card } from '@'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -12,9 +12,22 @@ export const parameters = {
 
 
 export const decorators = [
-  (Story) => {
-    return <Card>
-      <Story />
-    </Card>
+  (Story, args) => {
+    const decorator = args.parameters.decorator || 'card'
+    if (decorator === 'card') {
+      return <MajaContext>
+        <Card>
+          <Story />
+        </Card>
+      </MajaContext>
+    }
+
+    if (decorator === 'context') {
+      return <MajaContext>
+        <Story />
+      </MajaContext>
+    }
+
+    throw new Error(`Unknown parameters.background provided ${decorator}`)
   },
 ]

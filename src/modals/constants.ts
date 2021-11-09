@@ -1,0 +1,1 @@
+export const MODAL_OVERLAY_PORTAL_TARGET = "maja-modal-overlay-portal-target"
