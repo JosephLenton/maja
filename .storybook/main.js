@@ -13,12 +13,15 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-postcss"
   ],
-  webpackFinal: async (config, { configType }) => {
+  webpackFinal: async (config, env) => {
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname, "..", "src"),
     }
 
+    config.resolve.modules.push(__dirname, "..", "src")
+    config.resolve.modules.push(__dirname, "..", "node_modules")
+
     return config
-  }
+  },
 }

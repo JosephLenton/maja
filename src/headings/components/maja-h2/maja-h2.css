@@ -1,3 +1,4 @@
 .maja-h2 {
-  margin: 0 0 16px;
+  font-size: var(--maja-font-size-large);
+  line-height: var(--maja-line-height-large);
 }

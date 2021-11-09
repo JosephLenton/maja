@@ -1,6 +1,6 @@
-:root {
+.maja-context {
   color: var(--maja-ui-text);
-  font-family: var(--maja-font-family-normal);
+  font-family: var(--maja-font-family-body);
   font-weight: var(--maja-font-weight-normal);
   font-size: var(--maja-font-size-normal);
   -webkit-font-smoothing: antialiased;

@@ -1,14 +1,16 @@
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: var(--maja-margin-space);
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   border: 1px solid var(--maja-ui-border);
   box-shadow: 0 2px 4px var(--maja-ui-shadow-colour);
   border-radius: var(--maja-ui-border-radius--block);
   box-sizing: border-box;
   padding: var(--maja-margin);
   background: var(--maja-ui-background);
+  color: var(--maja-ui-text);
 
   &--padding-small {
     padding: var(--maja-margin-space) var(--maja-margin-space);

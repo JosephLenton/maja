@@ -1,3 +1,5 @@
+import { Card } from '@'
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -7,3 +9,12 @@ export const parameters = {
     },
   },
 }
+
+
+export const decorators = [
+  (Story) => {
+    return <Card>
+      <Story />
+    </Card>
+  },
+]

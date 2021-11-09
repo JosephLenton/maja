@@ -4,8 +4,8 @@
   padding: 0;
   width: 100%;
 
-  font-family: var(--maja-font-family-normal);
-  font-weight: var(--maja-font-weight-normal);
+  font-family: var(--maja-font-family-heading);
+  font-weight: var(--maja-font-weight-bold);
   font-size: var(--maja-font-size-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

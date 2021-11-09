@@ -1,0 +1,46 @@
+import '@/core/css'
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import { Card, P } from '@';
+import { H0, H1, H2, H3 } from '.';
+
+<Meta title="Headings" />
+
+<style>{`
+  .main {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: var(--maja-margin--large);
+  }
+`}</style>
+
+<div class="main">
+  <Card>
+    <H0>The Hero Heading, H0</H0>
+    <P>
+      Headings range from H0, to H6. The H0 is a H1 intended for large display purposes.
+      Whilst H1 through H6 are for use in product.
+    </P>
+    <P>
+      The big H0 size is designed for special purposes. As a main hero title.
+      For example on a landing page, or as a title to a special section.
+    </P>
+  </Card>
+
+  <Card>
+    <H1>The Main Heading, H1</H1>
+    <P>
+      The H1 is the standard page header.
+    </P>
+  </Card>
+
+  <Card>
+    <H2>The Sub Header, H2</H2>
+    <P>
+      The H2 is a header for subsections. These can sit in a section underneath the H1, or as the title to it's own card.
+    </P>
+  </Card>
+
+  <Card>
+    <H3>The Tertiary Header, H3</H3>
+  </Card>
+</div>

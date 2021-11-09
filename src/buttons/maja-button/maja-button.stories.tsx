@@ -1,25 +1,23 @@
 import '@/core/css'
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-
-import { Button, ButtonProps } from '.'
+import { Button as ButtonComponent, MajaButtonProps } from '.'
 
 export default {
   title: 'Buttons/Button',
-  component: Button,
+  component: ButtonComponent,
   argTypes: {},
-} as ComponentMeta<typeof Button>
+} as ComponentMeta<typeof ButtonComponent>
 
-const Template: ComponentStory<typeof Button> = (args: ButtonProps) => {
-  return <Button {...args}>Click me</Button>
+const Template: ComponentStory<typeof ButtonComponent> = (props: MajaButtonProps) => {
+  return <ButtonComponent {...props}>{props.children || 'Click me'}</ButtonComponent>
 }
 
-export const Default = Template
-
-export const States = () => {
+export const Button = () => {
   return <>
-    <Template selected />
-    <Template disabled />
-    <Template disabled selected />
+    <Template>Default Button</Template>
+    <Template selected>Selected Button</Template>
+    <Template disabled>Disabled Button</Template>
+    <Template selected disabled>Selected Disabled Button</Template>
   </>
 }

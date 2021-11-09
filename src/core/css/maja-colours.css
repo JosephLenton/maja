@@ -16,14 +16,16 @@
 
   --maja-color-dark-cyan: darkCyan;
 
-  --maja-color-light-x-grey: #B0BAC7;
-  --maja-color-light-grey: #9EA8B3;
+  --maja-color-light-xx-grey: #B0BAC7;
+  --maja-color-light-x-grey: #9EA8B3;
 
-  --maja-color-grey: #767D85;
-  --maja-color-grey--40p: rgba(128, 128, 128, 0.4);
-  --maja-color-grey--30p: rgba(128, 128, 128, 0.3);
-  --maja-color-grey--20p: rgba(128, 128, 128, 0.2);
-  --maja-color-grey--10p: rgba(128, 128, 128, 0.1);
+  --maja-color-light-grey: #6D737E;
+  --maja-color-light-grey--40p: rgba(128, 128, 128, 0.4);
+  --maja-color-light-grey--30p: rgba(128, 128, 128, 0.3);
+  --maja-color-light-grey--20p: rgba(128, 128, 128, 0.2);
+  --maja-color-light-grey--10p: rgba(128, 128, 128, 0.1);
+
+  --maja-color-grey: #565B63;
 
   --maja-color-dark-grey: #3F4247;
   --maja-color-dark-grey--40p: rgba(51, 51, 51, 0.4);

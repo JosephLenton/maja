@@ -23,4 +23,8 @@
   &--disabled:hover {
     background: transparent;
   }
+
+  &:active {
+    background: var(--maja-ui-background--active);
+  }
 }

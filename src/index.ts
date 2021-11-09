@@ -4,6 +4,7 @@ export * from './core'
 export * from './buttons'
 export * from './forms'
 export * from './headings'
+export * from './text'
 
 export const util = {
   concatClassNames

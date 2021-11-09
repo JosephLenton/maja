@@ -1,0 +1,10 @@
+.maja-p {
+  margin: 0;
+  color: var(--maja-ui-text);
+  font-family: var(--maja-font-family-body);
+  font-weight: var(--maja-font-weight-normal);
+  font-size: var(--maja-font-size-normal);
+  line-height: var(--maja-line-height-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
