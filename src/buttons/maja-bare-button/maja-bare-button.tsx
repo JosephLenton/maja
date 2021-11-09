@@ -1,16 +1,16 @@
 import React from 'react'
-import { MajaButtonBase, MajaButtonCoreProps } from '@/buttons/bases/maja-button-base'
+import { ButtonBase, ButtonCoreProps } from '@/buttons/bases/maja-button-base'
 
 import './maja-bare-button.css'
 
-export interface BareButtonProps extends MajaButtonCoreProps {
+export interface BareButtonProps extends ButtonCoreProps {
 }
 
 export const BareButton : React.FunctionComponent<BareButtonProps> = props => {
-  return <MajaButtonBase
+  return <ButtonBase
       baseClassName="maja-bare-button"
       {...props}
   >
     {props.children}
-  </MajaButtonBase>
+  </ButtonBase>
 }
