@@ -1,10 +1,10 @@
 :root {
   --maja-color-black: black;
 
-  --maja-color--white: white;
-  --maja-color--white--30p: rgba(255, 255, 255, 0.3);
-  --maja-color--white--20p: rgba(255, 255, 255, 0.2);
-  --maja-color--white--10p: rgba(255, 255, 255, 0.1);
+  --maja-color-white: white;
+  --maja-color-white--30p: rgba(255, 255, 255, 0.3);
+  --maja-color-white--20p: rgba(255, 255, 255, 0.2);
+  --maja-color-white--10p: rgba(255, 255, 255, 0.1);
 
   --maja-color-light-cyan: rgb(160, 255, 255);
 

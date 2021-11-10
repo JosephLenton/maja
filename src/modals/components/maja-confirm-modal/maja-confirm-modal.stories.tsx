@@ -4,23 +4,24 @@ import { ComponentMeta } from '@storybook/react'
 import { ConfirmModal as ConfirmModalComponent } from './maja-confirm-modal'
 import { MajaContext, ModalOverlayTarget } from '@'
 
+const ARG_TYPES = {
+  title: {
+    description: 'The title for the modal',
+    defaultValue: 'Add more penguins?',
+    control: { type: 'text' },
+  },
+  message: {
+    description: 'The modals content',
+    defaultValue: 'Would you like to add more penguins to the database?',
+    control: { type: 'text' },
+  },
+} as const
+
 export default {
   title: 'Modals/ConfirmModal',
   component: ConfirmModalComponent,
   parameters: {
     decorator: 'context',
-  },
-  argTypes: {
-    title: {
-      description: 'The title for the modal',
-      defaultValue: 'Add more penguins?',
-      control: { type: 'text' },
-    },
-    message: {
-      description: 'The modals content',
-      defaultValue: 'Would you like to add more penguins to the database?',
-      control: { type: 'text' },
-    },
   },
   decorators: [
     (Story) => {
@@ -31,7 +32,7 @@ export default {
   ]
 } as ComponentMeta<typeof ConfirmModalComponent>
 
-export const ConfirmModal = (args) => {
+export const WithMessage = (args) => {
   return <>
     <ModalOverlayTarget />
 
@@ -42,4 +43,21 @@ export const ConfirmModal = (args) => {
     />
   </>
 }
-ConfirmModal.storyName = "ConfirmModal"
+WithMessage.argTypes = {
+  ...ARG_TYPES
+}
+
+export const WithoutMessage = (args) => {
+  return <>
+    <ModalOverlayTarget />
+
+    <ConfirmModalComponent
+      {...args}
+      onSubmit={() => {}}
+      onCancel={() => {}}
+    />
+  </>
+}
+WithoutMessage.argTypes = {
+  title: ARG_TYPES.title,
+}
