@@ -1,5 +1,6 @@
 export * from './maja-card'
 export * from './maja-dropdown'
+export * from './maja-form'
 export * from './maja-horizontal-line'
 export * from './maja-horizontal-rule'
 export * from './maja-input'

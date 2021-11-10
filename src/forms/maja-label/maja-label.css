@@ -1,5 +1,9 @@
 .maja-label {
-  margin: 0 0 var(--maja-grid-one) 0;
+  color: var(--maja-ui-text);
+  font-family: var(--maja-font-family-body);
+  font-weight: var(--maja-font-weight-normal);
+  font-size: var(--maja-font-size-normal);
+  line-height: var(--maja-line-height-normal);
   width: 100%;
   display: flex;
   flex-direction: row;

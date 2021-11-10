@@ -50,7 +50,6 @@ export const Input : React.FunctionComponent<InputProps> = props => {
       value={value}
       checked={props.type === 'checkbox' && props.value}
       placeholder={props.placeholder}
-      size={10}
       autoFocus={props.autoFocus}
       onChange={ev => {
         if ( props.type === 'checkbox' ) {

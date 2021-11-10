@@ -5,13 +5,14 @@
   border-radius: 0;
   border-left: none;
   border-right: none;
-  padding: 4px 8px;
-
-  font-family: var(--maja-font-family-normal);
+  color: var(--maja-ui-text);
+  font-family: var(--maja-font-family-body);
   font-weight: var(--maja-font-weight-normal);
   font-size: var(--maja-font-size-normal);
+  line-height: var(--maja-line-height-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: var(--maja-grid-half) var(--maja-grid-one);
 
   &--disabled {
     border-color: var(--maja-ui-text--disabled);
