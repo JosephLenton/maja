@@ -19,7 +19,8 @@
     "clean": "yarn run clean:build",
     "clean:build": "rimraf ./lib/*",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy": "yarn run build && yarn run publish --access public"
   },
   "dependencies": {
     "classnames": "^2.3.1",
