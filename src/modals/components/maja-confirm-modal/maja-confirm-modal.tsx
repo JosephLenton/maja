@@ -1,10 +1,11 @@
 import React from 'react'
-import { P } from '@/text'
 import { MajaModalConfirmBase } from './../../bases/maja-confirm-modal-base'
 
 export interface ConfirmModalProps {
   title: string
-  message ?: string
+  cancelText ?: string
+  confirmText ?: string
+  confirmDisaled ?: boolean
   onSubmit: () => void
   onCancel: () => void
 }
@@ -12,11 +13,12 @@ export interface ConfirmModalProps {
 export const ConfirmModal : React.FunctionComponent<ConfirmModalProps> = props => {
   return <MajaModalConfirmBase
     title={props.title}
-    cancelText="Cancel"
-    confirmText="Confirm"
+    cancelText={props.cancelText || "Cancel"}
+    confirmText={props.confirmText || "Confirm"}
+    confirmDisaled={props.confirmDisaled}
     onCancel={props.onCancel}
     onSubmit={props.onSubmit}
   >
-    {props.message && <P>{props.message}</P>}
+    {props.children}
   </MajaModalConfirmBase>
 }

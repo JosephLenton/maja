@@ -2,6 +2,7 @@ import '@/core/css'
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { ConfirmModal as ConfirmModalComponent } from '@'
+import { Form, Label, Input } from '@'
 
 const ARG_TYPES = {
   title: {
@@ -9,10 +10,20 @@ const ARG_TYPES = {
     defaultValue: 'Add more penguins?',
     control: { type: 'text' },
   },
-  message: {
-    description: 'The modals content',
-    defaultValue: 'Would you like to add more penguins to the database?',
+  cancelText: {
+    description: 'Text for the cancel button',
+    defaultValue: 'Cancel',
     control: { type: 'text' },
+  },
+  confirmText: {
+    description: 'Text for the confirm button',
+    defaultValue: 'Confirm',
+    control: { type: 'text' },
+  },
+  confirmDisabled: {
+    description: 'Enable or disable the confirm modal',
+    defaultValue: true,
+    control: { type: 'boolean' },
   },
 } as const
 
@@ -24,24 +35,29 @@ export default {
   },
 } as ComponentMeta<typeof ConfirmModalComponent>
 
-export const WithMessage = (args) => {
+export const WithContent = (args) => {
   return <ConfirmModalComponent
     {...args}
     onSubmit={() => {}}
     onCancel={() => {}}
-  />
+  >
+    <Form onSubmit={() => {}}>
+      <Label>Num kittens <Input type="number" value={123}/></Label>
+      <Label>Num puppies <Input type="number" value={456}/></Label>
+    </Form>
+  </ConfirmModalComponent>
 }
-WithMessage.argTypes = {
+WithContent.argTypes = {
   ...ARG_TYPES
 }
 
-export const WithoutMessage = (args) => {
+export const WithoutContent = (args) => {
   return <ConfirmModalComponent
     {...args}
     onSubmit={() => {}}
     onCancel={() => {}}
   />
 }
-WithoutMessage.argTypes = {
+WithoutContent.argTypes = {
   title: ARG_TYPES.title,
 }

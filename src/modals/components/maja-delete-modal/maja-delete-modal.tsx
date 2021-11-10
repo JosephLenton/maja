@@ -1,5 +1,5 @@
 import React from 'react'
-import { ConfirmModal } from '@/modals'
+import { ConfirmMessageModal } from '@/modals'
 
 export interface DeleteModalProps {
   name: string
@@ -9,7 +9,7 @@ export interface DeleteModalProps {
 }
 
 export const DeleteModal : React.FunctionComponent<DeleteModalProps> = props => {
-  return <ConfirmModal
+  return <ConfirmMessageModal
     title={generateTitle(props)}
     message={generateMessage(props)}
     onCancel={props.onCancel}

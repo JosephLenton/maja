@@ -1,2 +1,5 @@
 .maja-form {
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: var(--maja-margin-space);
 }
