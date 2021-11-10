@@ -1,5 +1,6 @@
 export * from './components/maja-modal'
 export * from './components/maja-modal-overlay-target'
+export * from './components/maja-delete-modal'
 export * from './components/maja-new-modal'
 export * from './components/maja-rename-modal'
 export * from './components/maja-confirm-modal'
