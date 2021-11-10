@@ -14,7 +14,7 @@
   --maja-ui-background--unselected: var(--maja-color-dark-xxx-grey);
 
   --maja-ui-border: var(--maja-color-black);
-  --maja-ui-border--active: var(--maja-color-white);
+  --maja-ui-border--active: var(--maja-color-light-xx-grey);
   --maja-ui-border--selectable: var(--maja-color-grey);
   --maja-ui-border--selected: var(--maja-color-white);
   --maja-ui-border--unselected: transparent;
