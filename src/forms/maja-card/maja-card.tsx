@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { KeyboardEvent } from 'react'
 import classnames from 'classnames'
 
 import './maja-card.css'
@@ -6,6 +6,8 @@ import './maja-card.css'
 export interface CardProps {
   className ?: string
   padding ?: CardPadding
+
+  onKeyUp ?: (ev: KeyboardEvent) => void
 }
 
 export type CardPadding = 'small' | 'normal'
@@ -17,7 +19,7 @@ export const Card : React.FunctionComponent<CardProps> = props => {
     [props.className || '']: props.className,
   })
 
-  return <div className={className}>
+  return <div className={className} onKeyUp={props.onKeyUp}>
     {props.children}
   </div>
 }
