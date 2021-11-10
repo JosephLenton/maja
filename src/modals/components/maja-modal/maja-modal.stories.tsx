@@ -29,3 +29,4 @@ export const Modal = () => {
     </ModalComponent>
   </>
 }
+Modal.storyName = "Modal"

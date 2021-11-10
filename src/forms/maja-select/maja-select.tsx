@@ -16,7 +16,7 @@ export interface SelectOptionProps<V extends React.Key> {
 }
 
 export const Select = <V extends React.Key>(props: SelectProps<V>): React.ReactElement => {
-  const baseClass = `select`
+  const baseClass = `maja-select`
 
   console.log(props.options)
   return <select
@@ -31,7 +31,7 @@ export const Select = <V extends React.Key>(props: SelectProps<V>): React.ReactE
   >
     {props.options.map(option => {
       return <option
-        className="select__option"
+        className="maja-select__option"
         key={option.value}
         value={option.value}
         onSelect={() => {

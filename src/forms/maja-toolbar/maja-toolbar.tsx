@@ -7,7 +7,7 @@ export interface ToolbarProps {
 }
 
 export const Toolbar : React.FunctionComponent<ToolbarProps> = ({ className, children }) => {
-  return <div className={`toolbar ${className || ''}`}>
+  return <div className={`maja-toolbar ${className || ''}`}>
     {children}
   </div>
 }

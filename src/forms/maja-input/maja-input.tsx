@@ -32,9 +32,9 @@ type InputProps =
 
 export const Input : React.FunctionComponent<InputProps> = props => {
   const className = classnames({
-    'input': true,
-    'input--selected': props.selected,
-    'input--disabled': props.disabled,
+    'maja-input': true,
+    'maja-input--selected': props.selected,
+    'maja-input--disabled': props.disabled,
     [props.className || '']: !!props.className,
   })
 

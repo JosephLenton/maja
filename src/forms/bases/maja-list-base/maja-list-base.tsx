@@ -17,9 +17,9 @@ export interface ListBaseItem {
 }
 
 export const ListBase : React.FunctionComponent<ListBaseProps> = props => {
-  return <div className={`list-base ${props.baseClassName} ${props.className || ''}`}>
+  return <div className={`maja-list-base ${props.baseClassName} ${props.className || ''}`}>
     {props.items.map(item => {
-      return <div className="list-base__item" key={item.key}>
+      return <div className="maja-list-base__item" key={item.key}>
         {item.component}
       </div>
     })}

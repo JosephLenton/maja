@@ -7,4 +7,5 @@
   line-height: var(--maja-line-height-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: inherit;
 }

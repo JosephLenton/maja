@@ -1,4 +1,4 @@
-.new-button {
+.maja-new-button {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: var(--maja-grid-one);

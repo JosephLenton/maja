@@ -8,7 +8,7 @@ export interface LinkButtonProps extends ButtonCoreProps {
 
 export const LinkButton : React.FunctionComponent<LinkButtonProps> = props => {
   return <ButtonBase
-      baseClassName="link-button"
+      baseClassName="maja-link-button"
       {...props}
   >
     {props.children}

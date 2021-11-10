@@ -6,5 +6,5 @@ export interface HorizontalLineProps {
 }
 
 export const HorizontalLine : React.FunctionComponent<HorizontalLineProps> = () => {
-  return <hr className={`horizontal-line`} />
+  return <hr className={`maja-horizontal-line`} />
 }

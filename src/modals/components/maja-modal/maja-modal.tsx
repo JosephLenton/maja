@@ -2,23 +2,24 @@ import React from 'react'
 import { MODAL_OVERLAY_PORTAL_TARGET } from '../../constants'
 import { Card } from '@/forms'
 import { Portal } from '@/portals'
+import { concatClassNames } from '@/util/concat-class-names'
 
 import './maja-modal.css'
 
 export interface ModalProps {
+  className ?: string
+
   onClose ?: () => void,
 }
 
 export const Modal : React.FunctionComponent<ModalProps> = props => {
-  return <Portal target={MODAL_OVERLAY_PORTAL_TARGET} onCancel={props.onClose}>
-    <div className="modal" onKeyUp={ev => {
+  return <Portal target={MODAL_OVERLAY_PORTAL_TARGET} onUnmount={props.onClose}>
+    <Card className={concatClassNames("maja-modal", props.className)} onKeyUp={ev => {
       if ( ev.key === 'Escape' ) {
         props.onClose?.()
       }
     }}>
-      <Card className="modal__content">
-        {props.children}
-      </Card>
-    </div>
+      {props.children}
+    </Card>
   </Portal>
 }

@@ -12,11 +12,11 @@ export interface ListProps {
 
 export const List : React.FunctionComponent<ListProps> = props => {
   return <ListBase
-    baseClassName="list"
+    baseClassName="maja-list"
     items={props.items.map(item => ({
       key: item,
       component: <Button
-        className="list__button"
+        className="maja-list__button"
         selected={item === props.selected}
         onClick={() => props.onSelect(item)}
       >{item}</Button>,

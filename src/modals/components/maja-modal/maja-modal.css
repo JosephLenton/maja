@@ -1,14 +1,8 @@
-.modal {
+.maja-modal {
   min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  &__content {
-    width: 100%;
-    display: grid;
-    grid-auto-rows: min-content;
-    grid-template-columns: 1fr;
-    grid-row-gap: var(--margin);
-  }
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: 1fr;
+  grid-row-gap: var(--maja-margin);
+  padding: var(--maja-margin--large);
 }

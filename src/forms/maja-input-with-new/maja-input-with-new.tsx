@@ -33,7 +33,7 @@ export const InputWithNew : React.FunctionComponent<InputWithNewProps> = props =
     }
   }
 
-  return <div className="input-with-new">
+  return <div className="maja-input-with-new">
     <Input
       type="text"
       value={value}

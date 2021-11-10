@@ -1,4 +1,4 @@
-.select {
+.maja-select {
   background: var(--maja-ui-background);
   border: 1px solid var(--maja-ui-border--unselected);
   cursor: pointer;

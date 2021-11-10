@@ -1,3 +1,4 @@
 .maja-h3 {
-  margin: 0 0 16px;
+  font-size: var(--maja-font-size-medium);
+  line-height: var(--maja-line-height-medium);
 }

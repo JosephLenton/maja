@@ -20,7 +20,7 @@ export interface DropdownOptionProps<V extends React.Key> {
 }
 
 export const Dropdown = <V extends React.Key>(props: DropdownProps<V>): React.ReactElement => {
-  const baseClass = `dropdown`
+  const baseClass = `maja-dropdown`
   const [isOpen, setOpen] = useState(false)
 
   return <div className={classnames({
@@ -33,14 +33,14 @@ export const Dropdown = <V extends React.Key>(props: DropdownProps<V>): React.Re
       selected={isOpen}
       onClick={() => setOpen(!isOpen)}
     >
-      <span className="dropdown__button-text">
+      <span className="maja-dropdown__button-text">
         {props.children}
-        <span className="dropdown__button-dots">⋯</span>
+        <span className="maja-dropdown__button-dots">⋯</span>
       </span>
     </Button>
 
-    {isOpen && <Card className="dropdown__list" padding="small">
-      <ul className="dropdown__items">
+    {isOpen && <Card className="maja-dropdown__list" padding="small">
+      <ul className="maja-dropdown__items">
         {props.options.map(option => {
           return <li key={option.value}>
             <LinkButton

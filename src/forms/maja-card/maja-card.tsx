@@ -12,8 +12,8 @@ export type CardPadding = 'small' | 'normal'
 
 export const Card : React.FunctionComponent<CardProps> = props => {
   const className = classnames({
-    'card': true,
-    [`card--padding-${props.padding}`]: !!props.padding,
+    'maja-card': true,
+    [`maja-card--padding-${props.padding}`]: !!props.padding,
     [props.className || '']: props.className,
   })
 

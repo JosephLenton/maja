@@ -7,7 +7,7 @@ export interface TopbarProps {
 }
 
 export const Topbar : React.FunctionComponent<TopbarProps> = ({ className, children }) => {
-  return <div className={`topbar ${className || ''}`}>
+  return <div className={`maja-topbar ${className || ''}`}>
     {children}
   </div>
 }

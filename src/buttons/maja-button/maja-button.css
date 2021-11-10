@@ -1,5 +1,5 @@
 .maja-button {
-  padding: var(--maja-grid-half) var(--maja-grid-one);
+  padding: var(--maja-grid-one) var(--maja-grid-two);
   text-align: center;
   display: grid;
   grid-template-rows: auto;

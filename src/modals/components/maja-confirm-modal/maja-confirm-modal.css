@@ -1,0 +1,16 @@
+.maja-confirm-modal {
+  text-align: start;
+  max-width: min(calc(100vw - 2*var(--maja-margin)), 360px);
+
+  &__message {
+  }
+
+  &__buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: var(--maja-margin-space);
+  }
+}

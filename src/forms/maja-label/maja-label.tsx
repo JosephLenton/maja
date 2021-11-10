@@ -12,7 +12,7 @@ export interface LabelProps {
 
 export const Label : React.FunctionComponent<LabelProps> = props => {
   return <label
-      className={`label`}
+      className={`maja-label`}
   >
     {props.children}
   </label>

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  text-align: inherit;
 
   font-family: var(--maja-font-family-heading);
   font-weight: var(--maja-font-weight-bold);
