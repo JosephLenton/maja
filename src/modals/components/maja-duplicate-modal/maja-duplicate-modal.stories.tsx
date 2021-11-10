@@ -1,26 +1,26 @@
 import '@/core/css'
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { NewModal as NewModalComponent } from '@'
+import { DuplicateModal as DuplicateModalComponent } from '@'
 import { ModalOverlayTarget } from '@'
 
 export default {
-  title: 'Modals/NewModal',
-  component: NewModalComponent,
+  title: 'Modals/DuplicateModal',
+  component: DuplicateModalComponent,
   parameters: {
     decorator: 'context',
   },
-} as ComponentMeta<typeof NewModalComponent>
+} as ComponentMeta<typeof DuplicateModalComponent>
 
-export const NewModal = (args) => {
+export const DuplicateModal = (args) => {
   return <>
     <ModalOverlayTarget />
 
-    <NewModalComponent
+    <DuplicateModalComponent
       {...args}
       onSubmit={() => {}}
       onCancel={() => {}}
     />
   </>
 }
-NewModal.storyName = "NewModal"
+DuplicateModal.storyName = "DuplicateModal"

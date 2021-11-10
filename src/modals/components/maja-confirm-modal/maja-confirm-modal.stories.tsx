@@ -1,7 +1,7 @@
 import '@/core/css'
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { ConfirmModal as ConfirmModalComponent } from './maja-confirm-modal'
+import { ConfirmModal as ConfirmModalComponent } from '@'
 import { MajaContext, ModalOverlayTarget } from '@'
 
 const ARG_TYPES = {

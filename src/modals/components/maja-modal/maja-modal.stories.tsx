@@ -1,7 +1,7 @@
 import '@/core/css'
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { Modal as ModalComponent } from './maja-modal'
+import { Modal as ModalComponent } from '@'
 import { ModalOverlayTarget } from '@'
 
 export default {
