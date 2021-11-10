@@ -21,8 +21,8 @@ export default {
 export const RenameModal = (args) => {
   return <RenameModalComponent
     {...args}
-    onSubmit={() => {}}
     onCancel={() => {}}
+    onConfirm={() => {}}
   />
 }
 RenameModal.storyName = "RenameModal"

@@ -38,8 +38,8 @@ export default {
 export const WithContent = (args) => {
   return <ConfirmModalComponent
     {...args}
-    onSubmit={() => {}}
     onCancel={() => {}}
+    onConfirm={() => {}}
   >
     <Form onSubmit={() => {}}>
       <Label>Num kittens <Input type="number" value={123}/></Label>
@@ -54,8 +54,8 @@ WithContent.argTypes = {
 export const WithoutContent = (args) => {
   return <ConfirmModalComponent
     {...args}
-    onSubmit={() => {}}
     onCancel={() => {}}
+    onConfirm={() => {}}
   />
 }
 WithoutContent.argTypes = {

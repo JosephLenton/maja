@@ -27,8 +27,8 @@ export default {
 export const WithMessage = (args) => {
   return <ConfirmMessageModalComponent
     {...args}
-    onSubmit={() => {}}
     onCancel={() => {}}
+    onConfirm={() => {}}
   />
 }
 WithMessage.argTypes = {
@@ -38,8 +38,8 @@ WithMessage.argTypes = {
 export const WithoutMessage = (args) => {
   return <ConfirmMessageModalComponent
     {...args}
-    onSubmit={() => {}}
     onCancel={() => {}}
+    onConfirm={() => {}}
   />
 }
 WithoutMessage.argTypes = {

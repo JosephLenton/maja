@@ -4,8 +4,8 @@ import { ConfirmMessageModal } from '@/modals'
 export interface DeleteModalProps {
   name: string
   numUses ?: number
-  onSubmit: () => void
   onCancel: () => void
+  onConfirm: () => void
 }
 
 export const DeleteModal : React.FunctionComponent<DeleteModalProps> = props => {
@@ -13,7 +13,7 @@ export const DeleteModal : React.FunctionComponent<DeleteModalProps> = props => 
     title={generateTitle(props)}
     message={generateMessage(props)}
     onCancel={props.onCancel}
-    onSubmit={props.onSubmit}
+    onConfirm={props.onConfirm}
   />
 }
 

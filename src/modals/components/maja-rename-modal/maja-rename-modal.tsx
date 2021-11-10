@@ -3,8 +3,8 @@ import { MajaNewNameModalBase } from '../../bases/maja-new-name-modal-base'
 
 export interface RenameModalProps {
   name: string
-  onSubmit: (newName: string) => void
   onCancel: () => void
+  onConfirm: (newName: string) => void
 }
 
 export const RenameModal : React.FunctionComponent<RenameModalProps> = props => {
@@ -12,8 +12,8 @@ export const RenameModal : React.FunctionComponent<RenameModalProps> = props => 
     name={props.name}
     title="Rename"
     displayName="Name"
-    submitText="Apply"
-    onSubmit={props.onSubmit}
+    confirmText="Apply"
     onCancel={props.onCancel}
+    onConfirm={props.onConfirm}
   />
 }

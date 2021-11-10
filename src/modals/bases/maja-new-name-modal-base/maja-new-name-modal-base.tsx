@@ -7,25 +7,25 @@ import { Form } from '@/forms'
 export interface MajaNewNameModalBaseProps {
   title: string
   displayName: string
-  submitText: string
+  confirmText: string
   name: string
-  onSubmit: (newName: string) => void
   onCancel: () => void
+  onConfirm: (newName: string) => void
 }
 
 export const MajaNewNameModalBase : React.FunctionComponent<MajaNewNameModalBaseProps> = props => {
   const [newName, setNewName] = useState(props.name)
-  const runSubmit = () => props.onSubmit(newName)
+  const runConfirm = () => props.onConfirm(newName)
 
   return <MajaModalConfirmBase
     title={props.title}
     cancelText="Cancel"
-    confirmText={props.submitText}
+    confirmText={props.confirmText}
     confirmDisaled={newName === ''}
     onCancel={props.onCancel}
-    onSubmit={runSubmit}
+    onConfirm={runConfirm}
   >
-    <Form onSubmit={runSubmit}>
+    <Form onSubmit={runConfirm}>
       <Label>
         {props.displayName}
         <Input

@@ -28,8 +28,8 @@ export const WithNoUses = (args) => {
   return <DeleteModalComponent
     {...args}
     numUses={0}
-    onSubmit={() => {}}
     onCancel={() => {}}
+    onConfirm={() => {}}
   />
 }
 WithNoUses.argTypes = {
@@ -39,8 +39,8 @@ WithNoUses.argTypes = {
 export const WithUses = (args) => {
   return <DeleteModalComponent
     {...args}
-    onSubmit={() => {}}
     onCancel={() => {}}
+    onConfirm={() => {}}
   />
 }
 WithUses.argTypes = {
@@ -50,8 +50,8 @@ WithUses.argTypes = {
 export const WithoutUses = (args) => {
   return <DeleteModalComponent
     {...args}
-    onSubmit={() => {}}
     onCancel={() => {}}
+    onConfirm={() => {}}
   />
 }
 WithoutUses.argTypes = {

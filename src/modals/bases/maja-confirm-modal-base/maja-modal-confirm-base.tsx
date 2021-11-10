@@ -10,8 +10,8 @@ export interface MajaModalConfirmBaseProps {
   cancelText : string
   confirmText : string
   confirmDisaled ?: boolean
-  onSubmit: () => void
   onCancel: () => void
+  onConfirm: () => void
 }
 
 export const MajaModalConfirmBase : React.FunctionComponent<MajaModalConfirmBaseProps> = props => {
@@ -28,7 +28,7 @@ export const MajaModalConfirmBase : React.FunctionComponent<MajaModalConfirmBase
       >{props.cancelText}</Button>
 
       <Button
-        onClick={props.onSubmit}
+        onClick={props.onConfirm}
         disabled={props.confirmDisaled}
       >{props.confirmText}</Button>
     </div>

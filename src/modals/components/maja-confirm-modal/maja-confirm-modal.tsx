@@ -6,8 +6,8 @@ export interface ConfirmModalProps {
   cancelText ?: string
   confirmText ?: string
   confirmDisaled ?: boolean
-  onSubmit: () => void
   onCancel: () => void
+  onConfirm: () => void
 }
 
 export const ConfirmModal : React.FunctionComponent<ConfirmModalProps> = props => {
@@ -17,7 +17,7 @@ export const ConfirmModal : React.FunctionComponent<ConfirmModalProps> = props =
     confirmText={props.confirmText || "Confirm"}
     confirmDisaled={props.confirmDisaled}
     onCancel={props.onCancel}
-    onSubmit={props.onSubmit}
+    onConfirm={props.onConfirm}
   >
     {props.children}
   </MajaModalConfirmBase>

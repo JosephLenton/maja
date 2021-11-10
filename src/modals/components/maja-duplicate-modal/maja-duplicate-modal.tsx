@@ -3,8 +3,8 @@ import { MajaNewNameModalBase } from '../../bases/maja-new-name-modal-base'
 
 export interface DuplicateModalProps {
   name: string
-  onSubmit: (newName: string) => void
   onCancel: () => void
+  onConfirm: (newName: string) => void
 }
 
 export const DuplicateModal : React.FunctionComponent<DuplicateModalProps> = props => {
@@ -12,8 +12,8 @@ export const DuplicateModal : React.FunctionComponent<DuplicateModalProps> = pro
     name={props.name}
     title="Duplicate"
     displayName="Name"
-    submitText="Create"
-    onSubmit={props.onSubmit}
+    confirmText="Create"
     onCancel={props.onCancel}
+    onConfirm={props.onConfirm}
   />
 }

@@ -14,8 +14,8 @@ export default {
 export const DuplicateModal = (args) => {
   return <DuplicateModalComponent
     {...args}
-    onSubmit={() => {}}
     onCancel={() => {}}
+    onConfirm={() => {}}
   />
 }
 DuplicateModal.storyName = "DuplicateModal"

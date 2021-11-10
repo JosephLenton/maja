@@ -14,8 +14,8 @@ export default {
 export const NewModal = (args) => {
   return <NewModalComponent
     {...args}
-    onSubmit={() => {}}
     onCancel={() => {}}
+    onConfirm={() => {}}
   />
 }
 NewModal.storyName = "NewModal"
