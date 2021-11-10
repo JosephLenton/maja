@@ -10,9 +10,9 @@ export interface RenameModalProps {
 export const RenameModal : React.FunctionComponent<RenameModalProps> = props => {
   return <MajaNewNameModalBase
     name={props.name}
-    displayTitle="Rename"
+    title="Rename"
     displayName="Name"
-    displaySubmit="Apply"
+    submitText="Apply"
     onSubmit={props.onSubmit}
     onCancel={props.onCancel}
   />

@@ -1,4 +1,4 @@
-.maja-confirm-modal {
+.maja-modal-confirm-base {
   text-align: start;
   max-width: min(calc(100vw - 2*var(--maja-margin)), 360px);
 

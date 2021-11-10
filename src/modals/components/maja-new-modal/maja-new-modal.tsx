@@ -9,9 +9,9 @@ export interface NewModalProps {
 export const NewModal : React.FunctionComponent<NewModalProps> = props => {
   return <MajaNewNameModalBase
     name=""
-    displayTitle="New"
+    title="New"
     displayName="Name"
-    displaySubmit="Create"
+    submitText="Create"
     onSubmit={props.onSubmit}
     onCancel={props.onCancel}
   />

@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
-import { Modal } from '@/modals'
-import { Button } from '@/buttons'
+import { MajaModalConfirmBase } from '../maja-confirm-modal-base'
 import { Label } from '@/forms'
 import { Input } from '@/forms'
 import { Form } from '@/forms'
 
-import './maja-new-name-modal-base.css'
-
 export interface MajaNewNameModalBaseProps {
-  displayTitle: string
+  title: string
   displayName: string
-  displaySubmit: string
+  submitText: string
   name: string
   onSubmit: (newName: string) => void
   onCancel: () => void
@@ -20,9 +17,14 @@ export const MajaNewNameModalBase : React.FunctionComponent<MajaNewNameModalBase
   const [newName, setNewName] = useState(props.name)
   const runSubmit = () => props.onSubmit(newName)
 
-  return <Modal onClose={props.onCancel}>
-    <h2>{props.displayTitle}</h2>
-
+  return <MajaModalConfirmBase
+    title={props.title}
+    cancelText="Cancel"
+    confirmText={props.submitText}
+    confirmDisaled={newName === ''}
+    onCancel={props.onCancel}
+    onSubmit={runSubmit}
+  >
     <Form onSubmit={runSubmit}>
       <Label>
         {props.displayName}
@@ -34,11 +36,5 @@ export const MajaNewNameModalBase : React.FunctionComponent<MajaNewNameModalBase
         />
       </Label>
     </Form>
-
-    <Button
-      className="maja-new-name-modal-base__confirm"
-      disabled={newName === ''}
-      onClick={runSubmit}
-    >{props.displaySubmit}</Button>
-  </Modal>
+  </MajaModalConfirmBase>
 }
