@@ -1,7 +1,7 @@
 import '@/core/css'
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { Button as ButtonComponent, ButtonProps } from '.'
+import { Button as ButtonComponent, ButtonProps } from '@'
 
 export default {
   title: 'Buttons/Button',

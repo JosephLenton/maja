@@ -1,4 +1,4 @@
-import { MajaContext, Card } from '@'
+import { MajaContext, ModalOverlayTarget, Card } from '@'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -24,6 +24,14 @@ export const decorators = [
 
     if (decorator === 'context') {
       return <MajaContext>
+        <Story />
+      </MajaContext>
+    }
+
+    if (decorator === 'modal') {
+      return <MajaContext>
+        <ModalOverlayTarget />
+
         <Story />
       </MajaContext>
     }

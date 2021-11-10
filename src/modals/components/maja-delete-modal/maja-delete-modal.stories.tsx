@@ -2,7 +2,6 @@ import '@/core/css'
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { DeleteModal as DeleteModalComponent } from '@'
-import { MajaContext, ModalOverlayTarget } from '@'
 
 const ARG_TYPES = {
   name: {
@@ -21,42 +20,39 @@ export default {
   title: 'Modals/DeleteModal',
   component: DeleteModalComponent,
   parameters: {
-    decorator: 'context',
+    decorator: 'modal',
   },
-  decorators: [
-    (Story) => {
-      return <MajaContext>
-        <Story />
-      </MajaContext>
-    },
-  ]
 } as ComponentMeta<typeof DeleteModalComponent>
 
-export const WithUses = (args) => {
-  return <>
-    <ModalOverlayTarget />
+export const WithNoUses = (args) => {
+  return <DeleteModalComponent
+    {...args}
+    numUses={0}
+    onSubmit={() => {}}
+    onCancel={() => {}}
+  />
+}
+WithNoUses.argTypes = {
+  name: ARG_TYPES.name
+}
 
-    <DeleteModalComponent
-      {...args}
-      onSubmit={() => {}}
-      onCancel={() => {}}
-    />
-  </>
+export const WithUses = (args) => {
+  return <DeleteModalComponent
+    {...args}
+    onSubmit={() => {}}
+    onCancel={() => {}}
+  />
 }
 WithUses.argTypes = {
   ...ARG_TYPES
 }
 
 export const WithoutUses = (args) => {
-  return <>
-    <ModalOverlayTarget />
-
-    <DeleteModalComponent
-      {...args}
-      onSubmit={() => {}}
-      onCancel={() => {}}
-    />
-  </>
+  return <DeleteModalComponent
+    {...args}
+    onSubmit={() => {}}
+    onCancel={() => {}}
+  />
 }
 WithoutUses.argTypes = {
   name: ARG_TYPES.name,
