@@ -1,5 +1,5 @@
 import React from 'react'
-import { concatClassNames } from '@/util/concat-class-names'
+import { concatClassNames } from 'maja-util'
 
 import './maja-context.css'
 

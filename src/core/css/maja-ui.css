@@ -6,6 +6,7 @@
   --maja-ui-text--unselected: var(--maja-color-light-xxx-grey);
   --maja-ui-text--disabled: var(--maja-color-light-grey);
 
+  --maja-ui-background--editor: var(--maja-color-black);
   --maja-ui-background: var(--maja-color-dark-xxx-grey);
   --maja-ui-background--primary: var(--maja-color-dark-xx-grey);
   --maja-ui-background--active: var(--maja-color-dark-grey);
@@ -23,6 +24,8 @@
 
   --maja-ui-border-radius--inline: 2px;
   --maja-ui-border-radius--block: 6px;
+
+  --maja-ui-box-shadow--card: 1px 1px 4px var(--maja-ui-shadow-colour);
 
   --maja-ui-shadow-colour: rgba(0, 0, 0, 0.4);
   --maja-ui-shadow-colour--light: rgba(0, 0, 0, 0.15);

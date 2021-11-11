@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { Button } from '@/buttons/maja-button'
 import classnames from 'classnames'
-import { Card } from '@/forms/maja-card'
-import { LinkButton } from '@/buttons/maja-link-button'
+import { Button, LinkButton } from '@/buttons'
+import { Card } from '@/surfaces'
 
 import './maja-dropdown.css'
 
@@ -39,7 +38,7 @@ export const Dropdown = <V extends React.Key>(props: DropdownProps<V>): React.Re
       </span>
     </Button>
 
-    {isOpen && <Card className="maja-dropdown__list" padding="small">
+    {isOpen && <Card className="maja-dropdown__list">
       <ul className="maja-dropdown__items">
         {props.options.map(option => {
           return <li key={option.value}>

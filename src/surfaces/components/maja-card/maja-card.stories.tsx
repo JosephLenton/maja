@@ -4,7 +4,7 @@ import { ComponentMeta } from '@storybook/react'
 import { Card as CardComponent } from '@'
 
 export default {
-  title: 'Card',
+  title: 'Surfaces/Card',
   component: CardComponent,
   parameters: {
     decorator: 'context',

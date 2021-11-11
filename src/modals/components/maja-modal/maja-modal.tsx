@@ -1,8 +1,8 @@
 import React from 'react'
 import { MODAL_OVERLAY_PORTAL_TARGET } from '../../constants'
-import { Card } from '@/forms'
+import { Card } from '@/surfaces'
 import { Portal } from '@/portals'
-import { concatClassNames } from '@/util/concat-class-names'
+import { concatClassNames } from 'maja-util'
 
 import './maja-modal.css'
 

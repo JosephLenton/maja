@@ -20,12 +20,13 @@
     "clean:build": "rimraf ./lib/*",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy": "yarn run build && yarn run publish --access public"
+    "deploy": "yarn run build && yarn publish --access public"
   },
   "dependencies": {
     "classnames": "^2.3.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "maja-util": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

@@ -1,0 +1,13 @@
+.maja-editor-card {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-row-gap: var(--maja-margin-space);
+  padding: var(--maja-margin-space);
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: var(--maja-ui-box-shadow--card);
+  border-radius: var(--maja-ui-border-radius--block);
+  box-sizing: border-box;
+  background: var(--maja-ui-background--editor);
+  color: var(--maja-ui-text);
+}
