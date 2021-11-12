@@ -1,18 +1,4 @@
 .maja-bare-button {
   padding: 0;
   text-align: start;
-
-  &:hover {
-    color: var(--maja-ui-text--selectable);
-  }
-
-  &--selected,
-  &--selected:hover {
-    color: var(--maja-ui-text--selected);
-  }
-
-  &--disabled,
-  &--disabled:hover {
-    color: var(--maja-ui-text--disabled);
-  }
 }

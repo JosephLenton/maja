@@ -23,5 +23,7 @@
     min-height: 48px;
     max-width: 48px;
     max-height: 48px;
+    box-sizing: border-box;
+    padding-bottom: 3px;
   }
 }

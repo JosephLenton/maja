@@ -39,7 +39,7 @@
   }
 
   &__controls {
-    margin-left: var(--maja-margin);
+    margin-left: var(--maja-margin-space);
     visibility: hidden;
   }
 
