@@ -1,0 +1,51 @@
+.maja-sidebar-button {
+  justify-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  padding-right: var(--maja-margin-space);
+  box-sizing: border-box;
+  margin: 0 0 0 var(--maja-negative-margin);
+  min-width: 100%;
+  width: calc(100% + 2 * var(--maja-margin));
+
+  &:hover {
+    background: var(--maja-ui-background--selectable);
+  }
+
+  &__button {
+    padding: var(--maja-margin-space);
+    padding-right: var(--maja-grid-half);
+    flex-grow: 1;
+  }
+
+  &:hover {
+    .sidebar-button__button {
+      padding-left: calc(var(--maja-margin-space) + var(--maja-grid-half));
+      padding-right: 0;
+      transition: padding var(--maja-timing);
+    }
+  }
+
+  &--selected {
+    &,
+    &:hover {
+      background: var(--maja-ui-background--selected);
+    }
+  }
+
+  &--disabled {
+    background: transparent;
+  }
+
+  &__controls {
+    margin-left: var(--maja-margin);
+    visibility: hidden;
+  }
+
+  &:hover .sidebar-button__controls {
+    visibility: visible;
+  }
+}

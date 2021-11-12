@@ -9,6 +9,12 @@ export default {
     sourcemap: true,
     format: 'es'
   },
+  external: [
+    'maja-util',
+    'classnames',
+    'react',
+    'react-dom',
+  ],
   plugins: [
     postcss(),
     typescript({
@@ -21,5 +27,8 @@ export default {
         "**/*.stories.tsx",
       ],
     })
-  ]
+  ],
+  onwarn: warning => {
+    throw new Error(warning.message);
+  },
 };

@@ -1,5 +1,5 @@
 import React from 'react'
-import { MajaNewNameModalBase } from './../../bases/maja-new-name-modal-base'
+import { MajaNewNameModalBase } from '../../bases/maja-new-name-modal-base'
 
 export interface NewModalProps {
   onCancel: () => void

@@ -10,7 +10,6 @@ export const parameters = {
   },
 }
 
-
 export const decorators = [
   (Story, args) => {
     const decorator = args.parameters.decorator || 'card'
@@ -34,6 +33,14 @@ export const decorators = [
 
         <Story />
       </MajaContext>
+    }
+
+    if (decorator === 'main') {
+      return <div className="fake-main">
+        <MajaContext>
+          <Story />
+        </MajaContext>
+      </div>
     }
 
     throw new Error(`Unknown parameters.background provided ${decorator}`)

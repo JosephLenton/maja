@@ -1,8 +1,17 @@
 .maja-context {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
   color: var(--maja-ui-text);
   font-family: var(--maja-font-family-body);
   font-weight: var(--maja-font-weight-normal);
   font-size: var(--maja-font-size-normal);
+  background: red;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Modal } from '@/modals'
+import { Modal } from './../../components/maja-modal'
 import { Button } from '@/buttons'
 import { H2 } from '@/headings'
 

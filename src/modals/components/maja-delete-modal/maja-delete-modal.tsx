@@ -1,5 +1,5 @@
 import React from 'react'
-import { ConfirmMessageModal } from '@/modals'
+import { ConfirmMessageModal } from '../maja-confirm-message-modal'
 
 export interface DeleteModalProps {
   name: string
