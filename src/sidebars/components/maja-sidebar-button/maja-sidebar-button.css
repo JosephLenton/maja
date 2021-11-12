@@ -21,12 +21,10 @@
     flex-grow: 1;
   }
 
-  &:hover {
-    .sidebar-button__button {
-      padding-left: calc(var(--maja-margin-space) + var(--maja-grid-half));
-      padding-right: 0;
-      transition: padding var(--maja-timing);
-    }
+  &:hover &__button {
+    padding-left: calc(var(--maja-margin-space) + var(--maja-grid-half));
+    padding-right: 0;
+    transition: padding var(--maja-timing);
   }
 
   &--selected {
@@ -45,7 +43,7 @@
     visibility: hidden;
   }
 
-  &:hover .sidebar-button__controls {
+  &:hover &__controls {
     visibility: visible;
   }
 }
