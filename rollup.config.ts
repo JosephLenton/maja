@@ -25,6 +25,7 @@ export default {
         "**/*.test.ts",
         "**/*.stories.ts",
         "**/*.stories.tsx",
+        "**/examples.tsx",
       ],
     })
   ],

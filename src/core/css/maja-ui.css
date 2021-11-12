@@ -6,13 +6,15 @@
   --maja-ui-text--unselected: var(--maja-color-light-xxx-grey);
   --maja-ui-text--disabled: var(--maja-color-light-grey);
 
-  --maja-ui-background--editor: var(--maja-color-black);
   --maja-ui-background: var(--maja-color-dark-xxx-grey);
   --maja-ui-background--primary: var(--maja-color-dark-xx-grey);
   --maja-ui-background--active: var(--maja-color-dark-grey);
   --maja-ui-background--selected: var(--maja-color-dark-grey);
   --maja-ui-background--selectable: var(--maja-color-dark-x-grey);
   --maja-ui-background--unselected: var(--maja-color-dark-xxx-grey);
+
+  --maja-ui-background__editor: var(--maja-color-black);
+  --maja-ui-background__editor--inverse: var(--maja-color-light-xxxx-grey);
 
   --maja-ui-border: var(--maja-color-black);
   --maja-ui-border--active: var(--maja-color-light-xx-grey);

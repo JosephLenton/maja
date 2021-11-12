@@ -1,6 +1,5 @@
 .maja-sidebar {
   background: var(--maja-ui-background--primary);
-  max-height: 100%;
   box-shadow: 1px 0 8px var(--maja-ui-shadow-colour--light);
   border-right: 1px solid var(--maja-ui-shadow-colour);
   box-sizing: border-box;

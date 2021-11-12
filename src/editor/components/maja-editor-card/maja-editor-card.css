@@ -8,6 +8,6 @@
   box-shadow: var(--maja-ui-box-shadow--card);
   border-radius: var(--maja-ui-border-radius--block);
   box-sizing: border-box;
-  background: var(--maja-ui-background--editor);
+  background: var(--maja-ui-background__editor);
   color: var(--maja-ui-text);
 }

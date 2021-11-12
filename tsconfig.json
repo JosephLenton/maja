@@ -54,6 +54,7 @@
     "node_modules",
     "dist",
     "**/*.stories.ts",
-    "**/*.stories.tsx"
+    "**/*.stories.tsx",
+    "**/examples.tsx",
   ]
 }

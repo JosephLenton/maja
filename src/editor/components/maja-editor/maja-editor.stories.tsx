@@ -1,31 +1,34 @@
 import '@/core/css'
-import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { Sidebar, SidebarButton, Editor } from '@'
+import { Editor } from './maja-editor'
+import { ExampleLongSidebar } from '../../../sidebars/components/maja-sidebar/examples'
+import { ExampleTopbar } from '../../../surfaces/components/maja-topbar/examples'
 
 export default {
   title: 'Editor/Editor',
   component: Editor,
+  argTypes: {},
   parameters: {
     decorator: 'main',
   },
-  decorators: [
-    Story => {
-      return <Story />
-    },
-  ],
 } as ComponentMeta<typeof Editor>
 
-export const WithSidebar = () => {
-  return <Editor sidebarChild={
-    <Sidebar title="Example">
-      <SidebarButton>One</SidebarButton>
-      <SidebarButton>Two</SidebarButton>
-      <SidebarButton>Three</SidebarButton>
-    </Sidebar>
-  }/>
+export const WithSidebarAndTopbar = Editor.bind({})
+WithSidebarAndTopbar.args = {
+  sidebarChild: ExampleLongSidebar({}),
+  topbarChild: ExampleTopbar({}),
 }
 
-export const WithoutSidebar = () => {
-  return <Editor />
+export const WithSidebar = Editor.bind({})
+WithSidebar.args = {
+  sidebarChild: ExampleLongSidebar({}),
 }
+
+/*
+export const WithTopbar = Editor.bind({})
+WithSidebar.args = {
+  topbarChild: ExampleTopbar({}),
+}
+
+export const Default = Editor.bind({})
+*/

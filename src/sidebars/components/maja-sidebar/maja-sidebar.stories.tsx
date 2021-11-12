@@ -2,7 +2,8 @@ import '@/core/css'
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { Sidebar as SidebarComponent } from '@'
-import { Editor, P, Button, Input, SidebarButton } from '@'
+import { P, Button, Input } from '@'
+import { ExampleLongSidebar } from './examples'
 
 export default {
   title: 'Sidebars/Sidebar',
@@ -14,70 +15,27 @@ export default {
 } as ComponentMeta<typeof SidebarComponent>
 
 export const SidebarEmpty = () => {
-  return <Template />
+  return <SidebarComponent />
 }
 SidebarEmpty.storyName = 'Empty Sidebar'
 
-export const SidebarCompleteWithHeading = () => {
-  return <Template title="Animals">
-    <SidebarButton>Donkeys</SidebarButton>
-    <SidebarButton>Kittens</SidebarButton>
-    <SidebarButton>Camels</SidebarButton>
-    <SidebarButton>Oxen</SidebarButton>
-    <SidebarButton>Pandas</SidebarButton>
-    <SidebarButton>Mountain Goats</SidebarButton>
-    <SidebarButton>Dogs</SidebarButton>
-    <SidebarButton>Sheep</SidebarButton>
-    <SidebarButton>Pigs</SidebarButton>
-    <SidebarButton>Giraffes</SidebarButton>
-    <SidebarButton>Alpacas</SidebarButton>
-    <SidebarButton>Emus</SidebarButton>
-    <SidebarButton>Eagles</SidebarButton>
-    <SidebarButton>Goldfish</SidebarButton>
-    <SidebarButton>Puppies</SidebarButton>
-  </Template>
-}
-
-export const SidebarCompleteWithoutHeading = () => {
-  return <Template>
-    <SidebarButton>Donkeys</SidebarButton>
-    <SidebarButton>Kittens</SidebarButton>
-    <SidebarButton>Camels</SidebarButton>
-    <SidebarButton>Oxen</SidebarButton>
-    <SidebarButton>Pandas</SidebarButton>
-    <SidebarButton>Mountain Goats</SidebarButton>
-    <SidebarButton>Dogs</SidebarButton>
-    <SidebarButton>Sheep</SidebarButton>
-    <SidebarButton>Pigs</SidebarButton>
-    <SidebarButton>Giraffes</SidebarButton>
-    <SidebarButton>Alpacas</SidebarButton>
-    <SidebarButton>Emus</SidebarButton>
-    <SidebarButton>Eagles</SidebarButton>
-    <SidebarButton>Goldfish</SidebarButton>
-    <SidebarButton>Puppies</SidebarButton>
-  </Template>
-}
+export const SidebarCompleteWithHeading = ExampleLongSidebar.bind({ title: "animals" })
+export const SidebarCompleteWithoutHeading = ExampleLongSidebar.bind({ title: undefined })
 
 export const SidebarWithHeading = () => {
-  return <Template title="Animals">
+  return <SidebarComponent title="Animals">
     <P>Donkeys</P>
     <P>Penguins</P>
     <P>Camels</P>
     <P>Oxen</P>
     <P>Donkeys</P>
-  </Template>
+  </SidebarComponent>
 }
 
 export const SidebarOfAssortedItems = () => {
-  return <Template>
+  return <SidebarComponent>
     <P>I am text</P>
     <Button>Click me</Button>
     <Input type="number" />
-  </Template>
-}
-
-const Template : React.FunctionComponent = props => {
-  return <Editor
-    sidebarChild={<SidebarComponent {...props} />}
-  />
+  </SidebarComponent>
 }

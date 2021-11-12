@@ -1,7 +1,14 @@
 .maja-topbar {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: min-content;
+  grid-column-gap: var(--margin--large);
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: center;
+  padding: 0 var(--maja-margin);
+  height: var(--maja-grid-five);
   overflow-y: auto;
-  justify-items: flex-start;
+  background: var(--maja-ui-background);
+  box-shadow: 0 1px 8px var(--maja-ui-shadow-colour--light);
+  border-bottom: 1px solid var(--maja-ui-shadow-colour);
 }

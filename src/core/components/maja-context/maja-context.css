@@ -1,13 +1,12 @@
 .maja-context {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  align-items: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: var(--maja-ui-text);
   font-family: var(--maja-font-family-body);
   font-weight: var(--maja-font-weight-normal);
   font-size: var(--maja-font-size-normal);
-  background: red;
   min-width: 100%;
   max-width: 100%;
   min-height: 100%;
