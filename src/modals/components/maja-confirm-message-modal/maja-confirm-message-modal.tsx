@@ -9,7 +9,7 @@ export interface ConfirmMessageModalProps {
   onConfirm: () => void
 }
 
-export const ConfirmMessageModal : React.FunctionComponent<ConfirmMessageModalProps> = props => {
+export const ConfirmMessageModal : React.VoidFunctionComponent<ConfirmMessageModalProps> = props => {
   return <MajaModalConfirmBase
     title={props.title}
     cancelText="Cancel"

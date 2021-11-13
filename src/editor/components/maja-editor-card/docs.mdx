@@ -1,0 +1,27 @@
+# Editor Card
+
+import { EditorCard } from './index'
+import { EditorCardButton } from './../maja-editor-card-button'
+
+The editor card exists to provide floating content on top of the editor canvas area.
+
+## A button example
+
+It aims to hold multiple buttons, and similar custom components.
+
+<EditorCard>
+  <EditorCardButton>+</EditorCardButton>
+  <EditorCardButton>-</EditorCardButton>
+  <EditorCardButton>🗑️</EditorCardButton>
+  <EditorCardButton>💾</EditorCardButton>
+  <EditorCardButton>😍</EditorCardButton>
+</EditorCard>
+
+## A poor example
+
+Be aware it provides no padding. This is intentional.
+Anything placed into the card needs to be styled as appropriate.
+
+<EditorCard>
+  this is some text plonked straight into the card.
+</EditorCard>

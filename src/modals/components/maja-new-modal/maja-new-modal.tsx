@@ -6,7 +6,7 @@ export interface NewModalProps {
   onConfirm: (newName: string) => void
 }
 
-export const NewModal : React.FunctionComponent<NewModalProps> = props => {
+export const NewModal : React.VoidFunctionComponent<NewModalProps> = props => {
   return <MajaNewNameModalBase
     name=""
     title="New"

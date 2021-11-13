@@ -7,7 +7,7 @@ export interface DuplicateModalProps {
   onConfirm: (newName: string) => void
 }
 
-export const DuplicateModal : React.FunctionComponent<DuplicateModalProps> = props => {
+export const DuplicateModal : React.VoidFunctionComponent<DuplicateModalProps> = props => {
   return <MajaNewNameModalBase
     name={props.name}
     title="Duplicate"

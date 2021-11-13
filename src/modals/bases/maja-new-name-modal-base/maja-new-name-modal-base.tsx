@@ -13,7 +13,7 @@ export interface MajaNewNameModalBaseProps {
   onConfirm: (newName: string) => void
 }
 
-export const MajaNewNameModalBase : React.FunctionComponent<MajaNewNameModalBaseProps> = props => {
+export const MajaNewNameModalBase : React.VoidFunctionComponent<MajaNewNameModalBaseProps> = props => {
   const [newName, setNewName] = useState(props.name)
   const runConfirm = () => props.onConfirm(newName)
 

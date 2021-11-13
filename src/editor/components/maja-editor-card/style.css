@@ -1,8 +1,7 @@
 .maja-editor-card {
   display: inline-grid;
   grid-auto-flow: row;
-  grid-row-gap: var(--maja-margin-space);
-  padding: var(--maja-margin-space);
+  padding: 0;
   justify-content: flex-start;
   align-items: flex-start;
   box-shadow: var(--maja-ui-box-shadow--card);
@@ -10,4 +9,5 @@
   box-sizing: border-box;
   background: var(--maja-ui-background__editor);
   color: var(--maja-ui-text);
+  overflow: hidden;
 }

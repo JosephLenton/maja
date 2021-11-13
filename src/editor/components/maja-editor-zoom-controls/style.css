@@ -1,0 +1,11 @@
+.maja-editor-zoom-controls {
+  &__zoom-number {
+    max-width: var(--maja-grid-four);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--maja-font-size-x-small);
+    line-height: var(--maja-line-height-x-small);
+    padding: var(--maja-grid-half) 0;
+  }
+}

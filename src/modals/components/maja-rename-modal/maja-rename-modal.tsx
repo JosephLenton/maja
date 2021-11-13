@@ -7,7 +7,7 @@ export interface RenameModalProps {
   onConfirm: (newName: string) => void
 }
 
-export const RenameModal : React.FunctionComponent<RenameModalProps> = props => {
+export const RenameModal : React.VoidFunctionComponent<RenameModalProps> = props => {
   return <MajaNewNameModalBase
     name={props.name}
     title="Rename"

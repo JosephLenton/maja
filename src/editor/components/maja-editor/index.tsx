@@ -1,7 +1,7 @@
 import React from 'react'
 import { concatClassNames } from 'maja-util'
 
-import './maja-editor.css'
+import './style.css'
 
 export interface EditorProps {
   className ?: string

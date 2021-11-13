@@ -7,6 +7,6 @@ import './maja-modal-overlay-target.css'
 export interface ModalOverlayTargetProps {
 }
 
-export const ModalOverlayTarget : React.FunctionComponent<ModalOverlayTargetProps> = () => {
+export const ModalOverlayTarget : React.VoidFunctionComponent<ModalOverlayTargetProps> = () => {
   return <PortalTarget className="maja-modal-overlay-target" name={MODAL_OVERLAY_PORTAL_TARGET} />
 }

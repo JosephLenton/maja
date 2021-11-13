@@ -8,7 +8,7 @@ export interface DeleteModalProps {
   onConfirm: () => void
 }
 
-export const DeleteModal : React.FunctionComponent<DeleteModalProps> = props => {
+export const DeleteModal : React.VoidFunctionComponent<DeleteModalProps> = props => {
   return <ConfirmMessageModal
     title={generateTitle(props)}
     message={generateMessage(props)}

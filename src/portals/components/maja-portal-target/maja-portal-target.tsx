@@ -6,7 +6,7 @@ export interface ModalPortalTargetProps {
   className ?: string
 }
 
-export const PortalTarget : React.FunctionComponent<ModalPortalTargetProps> = props => {
+export const PortalTarget : React.VoidFunctionComponent<ModalPortalTargetProps> = props => {
   const El = props.element || 'div'
 
   return <El

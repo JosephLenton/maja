@@ -1,0 +1,28 @@
+.maja-editor-card-button {
+  width: var(--maja-grid-four);
+  height: var(--maja-grid-four);
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: var(--maja-grid-four);
+
+  &:hover {
+    background: var(--maja-ui-background--selectable);
+  }
+
+  &--selected,
+  &--selected:hover {
+    background: var(--maja-ui-background--selected);
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    background: transparent;
+  }
+
+  &:active {
+    background: var(--maja-ui-background--active);
+  }
+}
