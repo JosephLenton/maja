@@ -9,18 +9,7 @@ export interface ModalPortalTargetProps {
 export const PortalTarget : React.VoidFunctionComponent<ModalPortalTargetProps> = props => {
   const El = props.element || 'div'
 
-  return <El
-    className={props.className}
-    id={props.name}
-    ref={assertNoDuplicatePortal(props)}
-  />
-}
-
-function assertNoDuplicatePortal(
-  props: ModalPortalTargetProps,
-):React.MutableRefObject<null> {
   const portalRef = useRef<null>(null)
-
   useEffect(() => {
     if (!portalRef.current) {
       return
@@ -32,5 +21,9 @@ function assertNoDuplicatePortal(
     }
   }, [portalRef])
 
-  return portalRef
+  return <El
+    className={props.className}
+    id={props.name}
+    ref={portalRef}
+  />
 }

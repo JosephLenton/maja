@@ -1,0 +1,7 @@
+.pivot {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: 0;
+}

@@ -32,4 +32,4 @@ export default {
   onwarn: warning => {
     throw new Error(warning.message);
   },
-};
+}

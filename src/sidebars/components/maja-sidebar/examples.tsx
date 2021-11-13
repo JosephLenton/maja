@@ -4,10 +4,10 @@ import { SidebarButton } from '../maja-sidebar-button'
 import { NewButton } from '../../../buttons'
 
 export const ExampleSidebar : React.FunctionComponent<Partial<SidebarProps>> = props => {
-  return <Sidebar title="Example" {...props}>
-    <SidebarButton>One</SidebarButton>
-    <SidebarButton>Two</SidebarButton>
-    <SidebarButton>Three</SidebarButton>
+  return <Sidebar title="Sidebar Example" {...props}>
+    <SidebarButton>Example one</SidebarButton>
+    <SidebarButton>Item two</SidebarButton>
+    <SidebarButton>Third item</SidebarButton>
   </Sidebar>
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonBase, ButtonCoreProps } from './../../../buttons/bases/maja-button-base'
+import { ButtonBase, ButtonCoreProps } from '../../../../buttons/bases/maja-button-base'
 
 import './style.css'
 

@@ -22,7 +22,7 @@ const ARG_TYPES = {
 } as const
 
 export default {
-  title: 'Editor/EditorZoomControls',
+  title: 'Editor/Complex/EditorZoomControls',
   component: EditorZoomControls,
   argTypes: ARG_TYPES,
   parameters: {
@@ -30,7 +30,7 @@ export default {
   },
 } as ComponentMeta<typeof EditorZoomControls>
 
-export const EmptyStory = (args) => {
+export const Default = (args) => {
   return <EditorZoomControls
     onZoomIn={() => {}}
     onZoomOut={() => {}}
@@ -38,3 +38,4 @@ export const EmptyStory = (args) => {
     {...args}
   />
 }
+Default.storyName = "EditorZoomControls"

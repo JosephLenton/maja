@@ -12,7 +12,7 @@ export const parameters = {
 
 export const decorators = [
   (Story, args) => {
-    const decorator = args.parameters.decorator || 'card'
+    const decorator = args.parameters.decorator || 'context'
     if (decorator === 'card') {
       return <MajaContext>
         <Card>

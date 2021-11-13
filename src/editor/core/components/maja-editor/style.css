@@ -19,6 +19,7 @@
     justify-items: stretch;
     grid-template: 100% / 100%;
     position: relative;
+    overflow: hidden;
   }
 
   &__sidebar {

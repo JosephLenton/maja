@@ -1,0 +1,37 @@
+# Pivot
+
+import '@/core/css'
+import { Meta, Story, Canvas } from '@storybook/addon-docs'
+import { Pivot } from './index'
+import { MajaContext } from '@'
+import { EditorCard } from '@'
+import { EditorCardButton } from '@'
+import { ExamplePartialEditor } from './../../../editor/core/components/maja-editor/examples'
+
+<Meta title="draggable/Pivot" component={Pivot} />
+
+The pivot is used to offset contents in a standardised way.
+
+ * Give it an offset
+ * Put contents inside
+ * Contents shows up offset! 🎉
+
+It is used primarily with the editor.
+
+## An example
+
+Here is an example card offset inside of an editor.
+
+<MajaContext>
+  <ExamplePartialEditor>
+    <Pivot offset={{ x: 120, y: 120 }}>
+      <EditorCard>
+        <EditorCardButton>😻</EditorCardButton>
+        <EditorCardButton>🐶</EditorCardButton>
+        <EditorCardButton>🐼</EditorCardButton>
+      </EditorCard>
+    </Pivot>
+  </ExamplePartialEditor>
+</MajaContext>
+
+The Pivot only provides an offset. It is from the bottom left of the screen. That is all.
