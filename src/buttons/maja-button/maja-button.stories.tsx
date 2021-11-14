@@ -1,12 +1,14 @@
-import '@/core/css'
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { Button as ButtonComponent, ButtonProps } from '@'
+import { Button as ButtonComponent, ButtonProps } from '@/buttons'
 
 export default {
   title: 'Buttons/Button',
   component: ButtonComponent,
   argTypes: {},
+  parameters: {
+    decorator: 'card',
+  },
 } as ComponentMeta<typeof ButtonComponent>
 
 const Template: ComponentStory<typeof ButtonComponent> = (props: ButtonProps) => {

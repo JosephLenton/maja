@@ -1,4 +1,3 @@
-import '@/core/css'
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { RenameModal as RenameModalComponent } from './maja-rename-modal'

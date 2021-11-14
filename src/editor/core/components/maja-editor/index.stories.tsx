@@ -1,4 +1,3 @@
-import '@/core/css'
 import { ComponentMeta } from '@storybook/react'
 import { Editor } from './index'
 import { ExampleFullEditor } from './examples'

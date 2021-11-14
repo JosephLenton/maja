@@ -20,7 +20,7 @@ export default {
       extract: true,
     }),
     typescript({
-      tsconfig: './tsconfig.json',
+      tsconfig: './tsconfig-alt.json',
       typescript: ttypescript,
       exclude: [
         "**/__tests__",

@@ -1,4 +1,3 @@
-import '@/core/css'
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { LinkButton as LinkButtonComponent, LinkButtonProps } from '@'
@@ -7,6 +6,9 @@ export default {
   title: 'Buttons/LinkButton',
   component: LinkButtonComponent,
   argTypes: {},
+  parameters: {
+    decorator: 'card',
+  },
 } as ComponentMeta<typeof LinkButtonComponent>
 
 const Template: ComponentStory<typeof LinkButtonComponent> = (props: LinkButtonProps) => {
