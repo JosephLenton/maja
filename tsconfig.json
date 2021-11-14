@@ -5,12 +5,14 @@
     "module": "esnext",
     "moduleResolution": "node",
     "jsx": "react",
+    "rootDir": "./src",
 
     "lib": ["esnext", "dom", "dom.iterable"],
 
-    // "outDir": "lib",
     "declaration": true,
     "declarationDir": ".",
+
+    "noEmit": true,
 
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -31,12 +33,9 @@
     "sourceMap": true,
 
     "paths": {
+      "@": ["./"],
       "@/*": ["./*"]
     },
-
-    "typeRoots": [
-      "./src/declarations/**/*.d.ts"
-    ],
 
     "skipLibCheck": true,
 
@@ -47,12 +46,13 @@
   },
 
   "include": [
-    "src",
+    "src/**/*.ts",
+    "src/**/*.tsx",
   ],
 
   "exclude": [
     "node_modules",
-    "dist",
+    "lib",
     "**/*.stories.ts",
     "**/*.stories.tsx",
     "**/examples.tsx",
