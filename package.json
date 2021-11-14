@@ -1,6 +1,6 @@
 {
   "name": "maja",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A UI toolkit for building editors",
   "repository": "https://github.com/JosephLenton/maja",
   "author": "josephlenton@gmail.com",
@@ -15,7 +15,7 @@
     "lib": "./lib"
   },
   "scripts": {
-    "build": "yarn run clean && yarn run build:src",
+    "build": "yarn run clean && yarn run build:src && yarn run build:link-css",
     "build:src": "rollup --config ./rollup.config.ts --configPlugin typescript",
     "build:link-css": "sed -i $'s!//# sourceMappingURL=index.js.map!import \\'./index.css\\'\\\n//# sourceMappingURL=index.js.map!g' ./lib/index.js",
     "build:parcel": "parcel build",
