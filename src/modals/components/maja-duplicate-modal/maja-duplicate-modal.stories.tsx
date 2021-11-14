@@ -1,7 +1,7 @@
 import '@/core/css'
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { DuplicateModal as DuplicateModalComponent } from '@'
+import { DuplicateModal as DuplicateModalComponent } from './maja-duplicate-modal'
 
 export default {
   title: 'Modals/DuplicateModal',

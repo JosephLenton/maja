@@ -16,7 +16,9 @@ export default {
     'react-dom',
   ],
   plugins: [
-    postcss(),
+    postcss({
+      extract: true,
+    }),
     typescript({
       tsconfig: './tsconfig.json',
       typescript: ttypescript,
