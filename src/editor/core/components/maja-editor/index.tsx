@@ -1,5 +1,5 @@
 import React from 'react'
-import { concatClassNames } from 'maja-util'
+import { alwaysMap, concatClassNames } from 'maja-util'
 
 import './style.css'
 
@@ -21,7 +21,9 @@ export const Editor : React.FunctionComponent<EditorProps> = props => {
     </div>}
 
     <div className='maja-editor__content'>
-      {props.children}
+      {alwaysMap(props.children, (child, i) => {
+        return <div className='maja-editor__content-child' key={i}>{child}</div>
+      })}
     </div>
   </div>
 }

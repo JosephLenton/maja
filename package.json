@@ -1,6 +1,6 @@
 {
   "name": "maja",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "A UI toolkit for building editors",
   "repository": "https://github.com/JosephLenton/maja",
   "author": "josephlenton@gmail.com",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "maja-util": "^1.1.0"
+    "maja-util": "^1.2.1"
   },
   "peerDependencies": {
     "react": "^17.0.0",

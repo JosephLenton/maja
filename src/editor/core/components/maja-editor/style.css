@@ -37,8 +37,16 @@
   &__content {
     grid-area: content;
     background: var(--maja-ui-background__editor--inverse);
-
-    /* grid-template: 'topbar' min-content 'content' auto / auto 1fr; */
     z-index: 0;
+
+    display: grid;
+    grid-template: 'children' auto / auto;
+    overflow: hidden;
+  }
+
+  &__content-child {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    overflow: hidden;
   }
 }

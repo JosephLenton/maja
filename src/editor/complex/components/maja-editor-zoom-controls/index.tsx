@@ -18,14 +18,14 @@ export interface EditorZoomControlsProps {
    *  - 50% zoom is 0.5
    */
   zoom : number
-  zoomInDisabled : boolean
-  zoomOutDisabled : boolean
+  zoomInDisabled ?: boolean
+  zoomOutDisabled ?: boolean
   onZoomIn : () => void
   onZoomOut : () => void
   onSetZoom : (zoom: number) => void
 }
 
-export const EditorZoomControls : React.FunctionComponent<EditorZoomControlsProps> = props => {
+export const EditorZoomControls : React.VoidFunctionComponent<EditorZoomControlsProps> = props => {
   return <EditorCard className="maja-editor-zoom-controls">
     <EditorCardButton disabled={props.zoomInDisabled}>+</EditorCardButton>
     <EditorCardButton disabled={props.zoomOutDisabled}>-</EditorCardButton>
