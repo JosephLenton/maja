@@ -17,16 +17,7 @@ export interface ButtonCoreProps {
 }
 
 export const ButtonBase : React.FunctionComponent<ButtonBaseProps> = props => {
-  const className = classnames({
-    'maja-button-base': true,
-    'maja-button-base--selected': props.selected,
-    'maja-button-base--disabled': props.disabled,
-    [props.baseClassName]: true,
-    [`${props.baseClassName}--selected`]: props.selected,
-    [`${props.baseClassName}--disabled`]: props.disabled,
-    [`${props.className}`]: !! props.className,
-  })
-
+  const className = buildClassName(props)
   const Element = props.element || 'button'
 
   return <Element
@@ -37,4 +28,25 @@ export const ButtonBase : React.FunctionComponent<ButtonBaseProps> = props => {
   >
     {props.children}
   </Element>
+}
+
+function buildClassName(props: ButtonBaseProps): string {
+  const classNameRaw = {
+    'maja-button-base': true,
+    'maja-button-base--selected': props.selected,
+    'maja-button-base--disabled': props.disabled,
+    [props.baseClassName]: true,
+    [`${props.className}--selected`]: props.selected,
+    [`${props.className}--disabled`]: props.disabled,
+  }
+
+  if (props.className) {
+    props.className.split(/ +/g).forEach(className => {
+      classNameRaw[className] = true
+      classNameRaw[`${className}--selected`] = props.selected
+      classNameRaw[`${className}--disabled`] = props.disabled
+    })
+  }
+
+  return classnames(classNameRaw)
 }
