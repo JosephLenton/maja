@@ -21,9 +21,7 @@ export const Editor : React.FunctionComponent<EditorProps> = props => {
     </div>}
 
     <div className='maja-editor__content'>
-      {alwaysMap(props.children, (child, i) => {
-        return <div className='maja-editor__content-child' key={i}>{child}</div>
-      })}
+      {props.children}
     </div>
   </div>
 }

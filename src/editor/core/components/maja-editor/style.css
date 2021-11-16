@@ -38,15 +38,17 @@
     grid-area: content;
     background: var(--maja-ui-background__editor--inverse);
     z-index: 0;
-
     display: grid;
-    grid-template: 'children' auto / auto;
+    grid-template: 'children' 1fr / 1fr;
     overflow: hidden;
-  }
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-items: flex-start;
+    align-content: flex-start;
 
-  &__content-child {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    overflow: hidden;
+    & > * {
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
   }
 }
