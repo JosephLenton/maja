@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { concatClassNames } from 'maja-util'
-import { EditorCard, EditorCardButton } from '@/editor'
+import { EditorCard } from './../../../core/components/maja-editor-card'
+import { EditorCardButton } from './../../../core/components/maja-editor-card-button'
 import classnames from 'classnames'
 
 import './style.css'
