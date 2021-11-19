@@ -36,8 +36,8 @@ function buildClassName(props: ButtonBaseProps): string {
     'maja-button-base--selected': props.selected,
     'maja-button-base--disabled': props.disabled,
     [props.baseClassName]: true,
-    [`${props.className}--selected`]: props.selected,
-    [`${props.className}--disabled`]: props.disabled,
+    [`${props.baseClassName}--selected`]: props.selected,
+    [`${props.baseClassName}--disabled`]: props.disabled,
   }
 
   if (props.className) {

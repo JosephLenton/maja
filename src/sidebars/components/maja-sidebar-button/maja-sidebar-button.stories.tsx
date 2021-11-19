@@ -13,7 +13,7 @@ export default {
 } as ComponentMeta<typeof SidebarButtonComponent>
 
 export const SidebarButton = () => {
-  return <Sidebar title="These are some buttons">
+  return <Sidebar title="Example sidebar">
     <SidebarButtonComponent>Default button</SidebarButtonComponent>
     <SidebarButtonComponent selected>Selected button</SidebarButtonComponent>
     <SidebarButtonComponent disabled>Disabled button</SidebarButtonComponent>

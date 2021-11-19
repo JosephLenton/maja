@@ -1,7 +1,7 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { EditorCanvasPivot } from './index'
-import { ExampleFullEditor } from '../../../core/components/maja-editor/examples'
+import { ExampleFullEditor } from '../maja-editor/examples'
 
 const ARG_TYPES = {
   offsetX: {

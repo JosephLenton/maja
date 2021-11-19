@@ -1,0 +1,24 @@
+.maja-editor-controls-card {
+  display: inline-grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: var(--maja-ui-box-shadow--card);
+  border-radius: var(--maja-ui-border-radius--block);
+  box-sizing: border-box;
+  background: var(--maja-ui-background__editor--secondary);
+  overflow: hidden;
+
+  &__right {
+    padding: 0 var(--maja-margin);
+    width: 120px;
+    max-width: 120px;
+  }
+
+  &__controls {
+    &--is-right-open {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
