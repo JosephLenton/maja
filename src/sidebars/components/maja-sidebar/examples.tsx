@@ -31,3 +31,17 @@ export const ExampleLongSidebar : React.FunctionComponent<Partial<SidebarProps>>
     <NewButton />
   </Sidebar>
 }
+
+export const ExampleAnimalSidebar : React.FunctionComponent<Partial<SidebarProps>> = props => {
+  return <Sidebar {...props}>
+    <SidebarButton>🐶 🐶 🐶 🐶 🐶 🐶 🐶 🐶</SidebarButton>
+    <SidebarButton>🐈 🐈‍⬛ 🐈 🐈‍⬛ 🐈 🐈‍⬛ 🐈 🐈‍⬛</SidebarButton>
+    <SidebarButton>🐪 🐫 🐪 🐫 🐪 🐫 🐪 🐫</SidebarButton>
+    <SidebarButton>🐼 🐼 🐼 🐼 🐼 🐼 🐼 🐼</SidebarButton>
+    <SidebarButton>🐑 🐏 🐑 🐏 🐑 🐏 🐑 🐏</SidebarButton>
+    <SidebarButton>🦒 🦒 🦒 🦒 🦒 🦒 🦒 🦒</SidebarButton>
+    <SidebarButton>🦙 🦙 🦙 🦙 🦙 🦙 🦙 🦙</SidebarButton>
+    <SidebarButton>🐁 🦅 🦅 🦅 🦅 🦅 🦅 🦅</SidebarButton>
+    <SidebarButton>🐟 🐟 🐟 🐟 🐟 🐟 🐟 🐟</SidebarButton>
+  </Sidebar>
+}

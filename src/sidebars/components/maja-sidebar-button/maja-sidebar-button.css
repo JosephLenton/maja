@@ -19,6 +19,7 @@
     padding: var(--maja-margin-space);
     padding-right: var(--maja-grid-half);
     flex-grow: 1;
+    max-width: 100%;
   }
 
   &:hover &__button {

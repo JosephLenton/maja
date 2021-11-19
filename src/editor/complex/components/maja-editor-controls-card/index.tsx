@@ -23,13 +23,17 @@ export const EditorControlsCard : React.VoidFunctionComponent<EditorControlsCard
     'maja-editor-controls-card__controls--is-right-open': selectedIndex !== null,
   })
 
+  selectedIndex && console.log(
+    props.controls[selectedIndex].sidebarChild()
+  )
+
   return <div className={concatClassNames('maja-editor-controls-card', props.className)}>
     <EditorCard className={cardClassName}>
       {props.controls.map((control, i) => {
         return <EditorCardButton
           key={i}
           selected={selectedIndex === i}
-          onClick={() => setSelectedIndex(i)}
+          onClick={() => toggleSelectedIndex(i, selectedIndex, setSelectedIndex)}
         >{control.textDisplay}</EditorCardButton>
       })}
     </EditorCard>
@@ -38,4 +42,16 @@ export const EditorControlsCard : React.VoidFunctionComponent<EditorControlsCard
       {props.controls[selectedIndex].sidebarChild()}
     </div>}
   </div>
+}
+
+function toggleSelectedIndex(
+  i:number,
+  selectedIndex: number|null,
+  setSelectedIndex: (newIndex: number|null) => void,
+): void {
+  if (i === selectedIndex) {
+    setSelectedIndex(null)
+  } else {
+    setSelectedIndex(i)
+  }
 }

@@ -1,20 +1,26 @@
 import React from 'react'
 import { EditorControlsCard, EditorControlsCardProps } from '.'
+import { H1, P } from '@'
+import { ExampleLongSidebar, ExampleAnimalSidebar } from './../../../../sidebars/components/maja-sidebar/examples'
 
 export const ExampleEditorControlsCard : React.VoidFunctionComponent<Partial<EditorControlsCardProps>> = props => {
   return <EditorControlsCard
     controls={[
       {
         textDisplay: '+',
-        sidebarChild: () => <h1>yo</h1>,
+        sidebarChild: () => <ExampleLongSidebar />,
       },
       {
         textDisplay: '-',
-        sidebarChild: () => <></>,
+        sidebarChild: () => <H1>I am a heading</H1>,
       },
       {
         textDisplay: '🗑️',
-        sidebarChild: () => <></>,
+        sidebarChild: () => <div>
+          <P>There is no padding within this right section.</P>
+          <br/>
+          <P>It is expected you should add your own padding.</P>
+        </div>,
       },
       {
         textDisplay: '💾',
@@ -22,7 +28,7 @@ export const ExampleEditorControlsCard : React.VoidFunctionComponent<Partial<Edi
       },
       {
         textDisplay: '😍',
-        sidebarChild: () => <></>,
+        sidebarChild: () => <ExampleAnimalSidebar />,
       },
     ]}
     {...props}
