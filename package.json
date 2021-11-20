@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/JosephLenton/maja.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "josephlenton@gmail.com",
   "license": "MIT",
   "typings": "./lib/index.d.ts",
@@ -26,7 +29,7 @@
     "clean:build": "rimraf ./lib/*",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy": "yarn run build && yarn publish --access public"
+    "deploy": "yarn run build && yarn publish"
   },
   "dependencies": {
     "classnames": "^2.3.1",
