@@ -15,6 +15,7 @@ export interface EditorControlsCardControl {
   textDisplay: string
   sidebarChild: () => React.ReactNode
   onSelect ?: () => void
+  onUnselect ?: () => void
 }
 
 export const EditorControlsCard : React.VoidFunctionComponent<EditorControlsCardProps> = props => {
@@ -31,7 +32,7 @@ export const EditorControlsCard : React.VoidFunctionComponent<EditorControlsCard
         return <EditorCardButton
           key={i}
           selected={selectedIndex === i}
-          onClick={() => toggleSelectedIndex(i, selectedIndex, setSelectedIndex)}
+          onClick={() => toggleSelectedIndex(control, i, selectedIndex, setSelectedIndex)}
         >{control.textDisplay}</EditorCardButton>
       })}
     </EditorCard>
@@ -43,13 +44,16 @@ export const EditorControlsCard : React.VoidFunctionComponent<EditorControlsCard
 }
 
 function toggleSelectedIndex(
-  i:number,
+  control: EditorControlsCardControl,
+  i: number,
   selectedIndex: number|null,
   setSelectedIndex: (newIndex: number|null) => void,
 ): void {
   if (i === selectedIndex) {
     setSelectedIndex(null)
+    control.onUnselect?.()
   } else {
     setSelectedIndex(i)
+    control.onSelect?.()
   }
 }
