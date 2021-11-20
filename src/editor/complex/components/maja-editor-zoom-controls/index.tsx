@@ -1,4 +1,5 @@
 import React from 'react'
+import { concatClassNames } from 'maja-util'
 import { EditorCard } from '../../../core/components/maja-editor-card'
 import { EditorCardButton } from '../../../core/components/maja-editor-card-button'
 
@@ -26,7 +27,7 @@ export interface EditorZoomControlsProps {
 }
 
 export const EditorZoomControls : React.VoidFunctionComponent<EditorZoomControlsProps> = props => {
-  return <EditorCard className="maja-editor-zoom-controls">
+  return <EditorCard className={concatClassNames("maja-editor-zoom-controls", props.className)}>
     <EditorCardButton disabled={props.zoomInDisabled} onClick={props.onZoomIn}>+</EditorCardButton>
     <EditorCardButton disabled={props.zoomOutDisabled} onClick={props.onZoomOut}>-</EditorCardButton>
 

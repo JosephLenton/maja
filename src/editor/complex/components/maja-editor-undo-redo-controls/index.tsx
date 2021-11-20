@@ -1,4 +1,5 @@
 import React from 'react'
+import { concatClassNames } from 'maja-util'
 import { EditorCard } from '../../../core/components/maja-editor-card'
 import { EditorCardButton } from '../../../core/components/maja-editor-card-button'
 
@@ -14,7 +15,7 @@ export interface EditorUndoRedoControlsProps {
 }
 
 export const EditorUndoRedoControls : React.VoidFunctionComponent<EditorUndoRedoControlsProps> = props => {
-  return <EditorCard className="maja-editor-undo-redo-controls" direction="horizontal">
+  return <EditorCard className={concatClassNames("maja-editor-zoom-controls", props.className)} direction="horizontal">
     <EditorCardButton disabled={props.undoDisabled} onClick={props.onUndo}>Undo</EditorCardButton>
     <EditorCardButton disabled={props.redoDisabled} onClick={props.onRedo}>Redo</EditorCardButton>
   </EditorCard>
