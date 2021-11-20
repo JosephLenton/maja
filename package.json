@@ -1,5 +1,5 @@
 {
-  "name": "@maja",
+  "name": "@maja/core",
   "version": "0.1.0",
   "description": "A UI toolkit for building editors",
   "repository": "https://github.com/JosephLenton/maja",
