@@ -24,8 +24,8 @@
     color: var(--maja-ui-text--selected);
   }
 
-  &--disabled,
-  &--disabled:hover {
+  &:disabled,
+  &:disabled:hover {
     border-color: var(--maja-ui-border--disabled);
     color: var(--maja-ui-text--disabled);
   }

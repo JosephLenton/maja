@@ -17,8 +17,8 @@
     background: var(--maja-ui-background--selected);
   }
 
-  &--disabled,
-  &--disabled:hover {
+  &:disabled,
+  &:disabled:hover {
     background: transparent;
   }
 

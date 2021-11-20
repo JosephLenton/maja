@@ -18,14 +18,14 @@
   &__button {
     padding: var(--maja-margin-space);
     padding-right: var(--maja-grid-half);
+    transition: padding var(--maja-timing);
     flex-grow: 1;
     max-width: 100%;
   }
 
-  &:hover &__button {
+  &:hover &__button:not(:disabled) {
     padding-left: calc(var(--maja-margin-space) + var(--maja-grid-half));
     padding-right: 0;
-    transition: padding var(--maja-timing);
   }
 
   &--selected {
@@ -35,7 +35,7 @@
     }
   }
 
-  &--disabled {
+  &:disabled {
     background: transparent;
   }
 

@@ -34,17 +34,14 @@ function buildClassName(props: ButtonBaseProps): string {
   const classNameRaw = {
     'maja-button-base': true,
     'maja-button-base--selected': props.selected,
-    'maja-button-base--disabled': props.disabled,
     [props.baseClassName]: true,
     [`${props.baseClassName}--selected`]: props.selected,
-    [`${props.baseClassName}--disabled`]: props.disabled,
   }
 
   if (props.className) {
     props.className.split(/ +/g).forEach(className => {
       classNameRaw[className] = true
       classNameRaw[`${className}--selected`] = props.selected
-      classNameRaw[`${className}--disabled`] = props.disabled
     })
   }
 
