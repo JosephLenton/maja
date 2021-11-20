@@ -24,10 +24,6 @@ export const EditorControlsCard : React.VoidFunctionComponent<EditorControlsCard
     'maja-editor-controls-card__controls--is-right-open': selectedIndex !== null,
   })
 
-  selectedIndex && console.log(
-    props.controls[selectedIndex].sidebarChild()
-  )
-
   return <div className={concatClassNames('maja-editor-controls-card', props.className)}>
     <EditorCard className={cardClassName}>
       {props.controls.map((control, i) => {
