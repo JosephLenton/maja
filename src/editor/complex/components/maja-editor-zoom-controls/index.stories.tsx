@@ -1,7 +1,7 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { EditorZoomControls } from './index'
-import { ExampleZoomControls } from './examples'
+import { ExampleEditorZoomControls } from './examples'
 
 const ARG_TYPES = {
   zoom: {
@@ -31,7 +31,7 @@ export default {
 } as ComponentMeta<typeof EditorZoomControls>
 
 export const Default = (args) => {
-  return <ExampleZoomControls
+  return <ExampleEditorZoomControls
     {...args}
   />
 }
