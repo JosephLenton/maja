@@ -10,7 +10,7 @@ export default {
     format: 'es'
   },
   external: [
-    'maja-util',
+    '@maja-ui/util',
     'classnames',
     'react',
     'react-dom',

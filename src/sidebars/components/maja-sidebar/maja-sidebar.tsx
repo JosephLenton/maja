@@ -1,5 +1,5 @@
 import React from 'react'
-import { concatClassNames } from 'maja-util'
+import { concatClassNames } from '@maja-ui/util'
 import { SidebarHeading } from '../../internal-components/maja-sidebar-heading'
 
 import './maja-sidebar.css'

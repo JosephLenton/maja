@@ -4,7 +4,7 @@ import { Editor } from './index'
 import { ExampleFullEditor } from './examples'
 import { ExampleEditorCard } from '../maja-editor-card/examples'
 import { ExampleZoomControls } from '../../../complex/components/maja-editor-zoom-controls/examples'
-import { Point2D } from 'maja-util'
+import { Point2D } from '@maja-ui/util'
 
 export default {
   title: 'Editor/Editor',

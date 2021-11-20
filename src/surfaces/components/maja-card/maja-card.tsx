@@ -1,5 +1,5 @@
 import React, { KeyboardEvent } from 'react'
-import { concatClassNames } from 'maja-util'
+import { concatClassNames } from '@maja-ui/util'
 
 import './maja-card.css'
 

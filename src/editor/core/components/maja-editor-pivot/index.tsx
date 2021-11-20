@@ -1,4 +1,4 @@
-import { Point2D } from 'maja-util'
+import { Point2D } from '@maja-ui/util'
 import React from 'react'
 
 import './style.css'

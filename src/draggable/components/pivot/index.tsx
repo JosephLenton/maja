@@ -1,5 +1,5 @@
 import React from 'react'
-import { Point2D } from 'maja-util'
+import { Point2D } from '@maja-ui/util'
 
 import './style.css'
 

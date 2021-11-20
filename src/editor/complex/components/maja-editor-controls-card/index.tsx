@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { concatClassNames } from 'maja-util'
+import { concatClassNames } from '@maja-ui/util'
 import { EditorCard } from './../../../core/components/maja-editor-card'
 import { EditorCardButton } from './../../../core/components/maja-editor-card-button'
 import classnames from 'classnames'
@@ -14,6 +14,7 @@ export interface EditorControlsCardProps {
 export interface EditorControlsCardControl {
   textDisplay: string
   sidebarChild: () => React.ReactNode
+  onSelect ?: () => void
 }
 
 export const EditorControlsCard : React.VoidFunctionComponent<EditorControlsCardProps> = props => {

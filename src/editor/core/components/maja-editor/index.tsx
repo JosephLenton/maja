@@ -1,5 +1,5 @@
 import React from 'react'
-import { alwaysMap, concatClassNames } from 'maja-util'
+import { alwaysMap, concatClassNames } from '@maja-ui/util'
 
 import './style.css'
 

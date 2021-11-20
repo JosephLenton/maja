@@ -1,5 +1,5 @@
 import React from 'react'
-import { concatClassNames } from 'maja-util'
+import { concatClassNames } from '@maja-ui/util'
 import { EditorCard } from '../../../core/components/maja-editor-card'
 import { EditorCardButton } from '../../../core/components/maja-editor-card-button'
 

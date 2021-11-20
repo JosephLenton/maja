@@ -1,5 +1,5 @@
 import React from 'react'
-import { concatClassNames } from 'maja-util'
+import { concatClassNames } from '@maja-ui/util'
 import { Sidebar } from '../maja-sidebar'
 import { SidebarButton } from '../maja-sidebar-button'
 
