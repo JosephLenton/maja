@@ -8,4 +8,6 @@
   border-bottom: 1px solid var(--maja-ui-shadow-colour);
   margin-top: var(--maja-negative-margin);
   padding-right: var(--maja-margin--large);
+  flex-shrink: 0;
+  overflow: hidden;
 }
