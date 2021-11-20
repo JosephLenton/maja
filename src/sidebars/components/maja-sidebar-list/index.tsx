@@ -13,7 +13,7 @@ export interface SidebarListProps<V extends string = string> {
   onSelectItem: (item: V) => void
 }
 
-export const SidebarList : React.VoidFunctionComponent<SidebarListProps> = props => {
+export const SidebarList = <V extends string = string>(props: SidebarListProps<V>):React.ReactElement => {
   return <Sidebar
     className={concatClassNames('maja-sidebar-list', props.className)}
     title={props.title}
