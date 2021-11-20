@@ -10,4 +10,12 @@
   background: var(--maja-ui-background__editor);
   color: var(--maja-ui-text);
   overflow: hidden;
+
+  &--direction-vertical {
+    /* Do nothing. */
+  }
+
+  &--direction-horizontal {
+    grid-auto-flow: column;
+  }
 }

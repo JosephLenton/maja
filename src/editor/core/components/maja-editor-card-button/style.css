@@ -1,5 +1,5 @@
 .maja-editor-card-button {
-  width: var(--maja-grid-four);
+  min-width: var(--maja-grid-four);
   height: var(--maja-grid-four);
   display: inline-flex;
   flex-direction: row;
