@@ -4,10 +4,16 @@
   padding: var(--maja-margin) var(--maja-margin-space) var(--maja-margin-space);
   box-sizing: border-box;
   text-transform: uppercase;
-  box-shadow: 0 1px 8px var(--maja-ui-shadow-colour--light);
-  border-bottom: 1px solid var(--maja-ui-shadow-colour);
+  box-shadow: none;
+  border-bottom: 1px solid transparent;
   margin-top: var(--maja-negative-margin);
   padding-right: var(--maja-margin--large);
   flex-shrink: 0;
   overflow: hidden;
+  transition: border-color var(--maja-timing), box-shadow var(--maja-timing);
+
+  &--bottom-border {
+    box-shadow: 0 1px 8px var(--maja-ui-shadow-colour--light);
+    border-bottom-color: var(--maja-ui-shadow-colour);
+  }
 }
