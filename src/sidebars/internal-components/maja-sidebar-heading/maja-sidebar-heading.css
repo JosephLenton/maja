@@ -1,7 +1,7 @@
 .maja-sidebar-heading {
   font-size: var(--maja-font-size-small);
   line-height: var(--maja-line-height-small);
-  padding: var(--maja-margin-space);
+  padding: var(--maja-margin) var(--maja-margin-space) var(--maja-margin-space);
   box-sizing: border-box;
   text-transform: uppercase;
   box-shadow: 0 1px 8px var(--maja-ui-shadow-colour--light);

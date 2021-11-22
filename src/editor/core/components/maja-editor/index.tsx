@@ -8,6 +8,7 @@ export interface EditorProps {
 
   sidebarChild ?: React.ReactNode
   topbarChild ?: React.ReactNode
+  bottomBarChild ?: React.ReactNode
 }
 
 export const Editor : React.FunctionComponent<EditorProps> = props => {
@@ -23,5 +24,9 @@ export const Editor : React.FunctionComponent<EditorProps> = props => {
     <div className='maja-editor__content'>
       {props.children}
     </div>
+
+    {props.bottomBarChild && <div className='maja-editor__bottom-bar'>
+      {props.bottomBarChild}
+    </div>}
   </div>
 }

@@ -6,6 +6,7 @@
   border-right-width: 0;
   font-size: var(--maja-font-size-x-large);
   line-height: var(--maja-line-height-x-large);
+  box-shadow: 0 1px 8px var(--maja-ui-shadow-colour--light);
 
   &:hover {
     background: var(--maja-color-dark-grey);

@@ -18,7 +18,7 @@
   --maja-ui-background__editor--secondary: var(--maja-color-dark-x-grey);
   --maja-ui-background__editor--inverse: var(--maja-color-light-xxxx-grey);
 
-  --maja-ui-border: var(--maja-color-black);
+  --maja-ui-border: var(--maja-color-dark-xxx-grey);
   --maja-ui-border--active: var(--maja-color-light-xx-grey);
   --maja-ui-border--selectable: var(--maja-color-grey);
   --maja-ui-border--selected: var(--maja-color-white);

@@ -7,18 +7,22 @@
   grid-template:
       'sidebar topbar' min-content
       'sidebar content' 1fr
+      'sidebar bottom-bar' min-content
       / auto 1fr;
   grid-gap: 0;
   flex-grow: 1;
+  background: var(--maja-ui-background__editor--inverse);
 
   &__sidebar,
   &__topbar,
+  &__bottom-bar,
   &__content {
     display: grid;
     justify-content: stretch;
     justify-items: stretch;
     grid-template: 100% / 100%;
     position: relative;
+    background: var(--maja-ui-background--primary);
   }
 
   &__sidebar,
@@ -38,9 +42,14 @@
     z-index: 1;
   }
 
+  &__bottom-bar {
+    max-width: 100%;
+    grid-area: bottom-bar;
+    z-index: 1;
+  }
+
   &__content {
     grid-area: content;
-    background: var(--maja-ui-background__editor--inverse);
     z-index: 0;
     display: grid;
     grid-template: 'children' 1fr / 1fr;
@@ -49,6 +58,7 @@
     align-items: flex-start;
     justify-items: flex-start;
     align-content: flex-start;
+    background: inherit;
 
     & > * {
       grid-column-start: 1;
