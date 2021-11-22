@@ -1,7 +1,7 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { Editor } from './index'
-import { ExampleFullEditor } from './examples'
+import { ExampleFullEditor, ExamplePartialEditor } from './examples'
 import { ExampleEditorCard } from '../maja-editor-card/examples'
 import { ExampleEditorZoomControls } from '../../../complex/components/maja-editor-zoom-controls/examples'
 import { Point2D } from '@maja-ui/util'
@@ -15,8 +15,8 @@ export default {
   },
 } as ComponentMeta<typeof Editor>
 
-export const WithMultipleContent = ExampleFullEditor.bind({})
-WithMultipleContent.args = {
+export const FullExample = ExampleFullEditor.bind({})
+FullExample.args = {
   children: [
     <ExamplePointerCanvas />,
 
@@ -30,15 +30,15 @@ WithMultipleContent.args = {
   ]
 }
 
-export const WithSidebarAndTopbar = ExampleFullEditor.bind({})
+export const BasicWithSidebarAndTopbar = ExamplePartialEditor.bind({})
 
-export const WithSidebar = ExampleFullEditor.bind({})
-WithSidebar.args = {
+export const BasicWithSidebar = ExamplePartialEditor.bind({})
+BasicWithSidebar.args = {
   topbarChild: undefined,
 }
 
-export const WithTopbar = ExampleFullEditor.bind({})
-WithTopbar.args = {
+export const BasicWithTopbar = ExamplePartialEditor.bind({})
+BasicWithTopbar.args = {
   sidebarChild: undefined,
 }
 

@@ -1,3 +1,4 @@
 :root {
-  --maja-timing: 120ms;
+  --maja-timing--fast: 120ms;
+  --maja-timing: 180ms;
 }

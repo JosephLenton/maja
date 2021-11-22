@@ -4,6 +4,7 @@
   --maja-ui-text--selectable: var(--maja-color-white);
   --maja-ui-text--selected: var(--maja-color-white);
   --maja-ui-text--unselected: var(--maja-color-light-xxx-grey);
+  --maja-ui-text--unselected-secondary: var(--maja-color-light-x-grey);
   --maja-ui-text--disabled: var(--maja-color-light-grey);
 
   --maja-ui-background: var(--maja-color-dark-xxx-grey);

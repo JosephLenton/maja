@@ -1,6 +1,14 @@
 .maja-collapsable-sidebar-button {
-  line-height: 12px;
-  background: var(--maja-color-dark-grey);
+  background: var(--maja-color-dark-x-grey);
   padding: var(--maja-grid-half) var(--maja-grid-quarter) var(--maja-grid-half) var(--maja-grid-half);
   border-radius: var(--maja-ui-border-radius--inline) 0 0 var(--maja-ui-border-radius--inline);
+  border: 1px solid var(--maja-color-dark-xxx-grey);
+  border-right-width: 0;
+  font-size: var(--maja-font-size-x-large);
+  line-height: var(--maja-line-height-x-large);
+
+  &:hover {
+    background: var(--maja-color-dark-grey);
+    border-color: var(--maja-color-dark-xxx-grey);
+  }
 }

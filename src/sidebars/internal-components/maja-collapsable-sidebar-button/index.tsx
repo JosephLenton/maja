@@ -12,8 +12,6 @@ export interface CollapsableSidebarButtonProps {
 }
 
 export const CollapsableSidebarButton : React.VoidFunctionComponent<CollapsableSidebarButtonProps> = props => {
-  const displayText = collapseButtonDisplayText(props)
-
   return <ButtonBase
     baseClassName='maja-collapsable-sidebar-button'
     className={props.className}
@@ -25,19 +23,5 @@ export const CollapsableSidebarButton : React.VoidFunctionComponent<CollapsableS
         props.onCollapse()
       }
     }}
-  >
-    {displayText}
-    <br/>
-    {displayText}
-    <br/>
-    {displayText}
-  </ButtonBase>
-}
-
-function collapseButtonDisplayText(props: CollapsableSidebarButtonProps):string {
-  if (props.collapsed) {
-    return "▷"
-  } else {
-    return "◁"
-  }
+  >⋮</ButtonBase>
 }

@@ -8,6 +8,8 @@
   min-height: 48px;
   padding: var(--maja-margin-space);
   box-sizing: content-box;
+  color: var(--maja-ui-text--unselected-secondary);
+  transition: border var(--maja-timing), color var(--maja-timing);
 
   &__inner {
     color: inherit;

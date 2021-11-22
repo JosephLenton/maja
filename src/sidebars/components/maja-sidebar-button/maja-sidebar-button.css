@@ -18,7 +18,7 @@
   &__button {
     padding: var(--maja-margin-space);
     padding-right: var(--maja-grid-half);
-    transition: padding var(--maja-timing);
+    transition: padding var(--maja-timing--fast);
     flex-grow: 1;
     max-width: 100%;
   }
