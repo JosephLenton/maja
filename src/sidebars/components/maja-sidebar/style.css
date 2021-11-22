@@ -5,6 +5,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &__content {
     padding: 0 var(--maja-margin);

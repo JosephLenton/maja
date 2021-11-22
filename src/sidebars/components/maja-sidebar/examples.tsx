@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sidebar, SidebarProps } from './maja-sidebar'
+import { Sidebar, SidebarProps } from '.'
 import { SidebarButton } from '../maja-sidebar-button'
 import { NewButton } from '../../../buttons'
 

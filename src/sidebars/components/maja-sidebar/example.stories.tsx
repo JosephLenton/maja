@@ -1,8 +1,8 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { Sidebar as SidebarComponent } from '@'
+import { Sidebar as SidebarComponent } from '.'
 import { P, Button, Input } from '@'
-import { ExampleLongSidebar } from './examples'
+import { ExampleLongSidebar } from '../maja-sidebar/examples'
 
 export default {
   title: 'Sidebars/Sidebar',
