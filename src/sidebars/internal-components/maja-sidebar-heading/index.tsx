@@ -1,6 +1,5 @@
 import React from 'react'
 import { H2 } from '@/headings'
-import { concatClassNames } from '@maja-ui/util'
 import classnames from 'classnames'
 
 import './style.css'
