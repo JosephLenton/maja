@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { concatClassNames } from '@maja-ui/util'
 import { EditorCard } from './../../../core/components/maja-editor-card'
 import { EditorCardButton } from './../../../core/components/maja-editor-card-button'
-import classnames from 'classnames'
 
 import './style.css'
 
@@ -13,21 +12,17 @@ export interface EditorControlsCardProps {
 
 export interface EditorControlsCardControl {
   textDisplay: string
-  sidebarChild: () => React.ReactNode
+  sidebarChild ?: () => React.ReactNode
   onSelect ?: () => void
   onUnselect ?: () => void
 }
 
 export const EditorControlsCard : React.VoidFunctionComponent<EditorControlsCardProps> = props => {
   const [selectedIndex, setSelectedIndex] = useState<null|number>(null)
-
-  const cardClassName = classnames({
-    'maja-editor-controls-card__controls': true,
-    'maja-editor-controls-card__controls--is-right-open': selectedIndex !== null,
-  })
+  const sidebarChildFunction = selectedIndex !== null && props.controls[selectedIndex].sidebarChild
 
   return <div className={concatClassNames('maja-editor-controls-card', props.className)}>
-    <EditorCard className={cardClassName}>
+    <EditorCard className={'maja-editor-controls-card__controls'}>
       {props.controls.map((control, i) => {
         return <EditorCardButton
           key={i}
@@ -37,8 +32,8 @@ export const EditorControlsCard : React.VoidFunctionComponent<EditorControlsCard
       })}
     </EditorCard>
 
-    {selectedIndex !== null && <div className="maja-editor-controls-card__right">
-      {props.controls[selectedIndex].sidebarChild()}
+    {sidebarChildFunction && <div className="maja-editor-controls-card__right">
+      {sidebarChildFunction()}
     </div>}
   </div>
 }

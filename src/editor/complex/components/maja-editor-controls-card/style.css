@@ -21,9 +21,6 @@
   }
 
   &__controls {
-    &--is-right-open {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
+    border-radius: 0;
   }
 }

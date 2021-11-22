@@ -24,7 +24,6 @@ export const ExampleEditorControlsCard : React.VoidFunctionComponent<Partial<Edi
       },
       {
         textDisplay: '💾',
-        sidebarChild: () => <></>,
       },
       {
         textDisplay: '😍',
