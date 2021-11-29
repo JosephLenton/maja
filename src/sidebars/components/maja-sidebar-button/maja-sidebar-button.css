@@ -40,7 +40,6 @@
   }
 
   &__controls {
-    margin-left: var(--maja-margin-space);
     visibility: hidden;
   }
 

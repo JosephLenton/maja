@@ -25,7 +25,7 @@ export const EditorControlsCard : React.VoidFunctionComponent<EditorControlsCard
     <EditorCard className={'maja-editor-controls-card__controls'}>
       {props.controls.map((control, i) => {
         return <EditorCardButton
-          key={i}
+          key={`${i}--${control.textDisplay}`}
           selected={selectedIndex === i}
           onClick={() => toggleSelectedIndex(control, i, selectedIndex, setSelectedIndex)}
         >{control.textDisplay}</EditorCardButton>
