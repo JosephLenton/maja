@@ -18,8 +18,9 @@ export const SidebarList = <V extends string = string>(props: SidebarListProps<V
     className={concatClassNames('maja-sidebar-list', props.className)}
     title={props.title}
   >
-    {props.items.map(item => {
+    {props.items.map((item, i) => {
       return <SidebarButton
+        key={`${i}--${item}`}
         selected={props.selectedItem === item}
         onClick={() => props.onSelectItem(item)}
       >{item}</SidebarButton>
