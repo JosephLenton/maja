@@ -1,6 +1,6 @@
 import React from 'react'
 import { MODAL_OVERLAY_PORTAL_TARGET } from '../../constants'
-import { PortalTarget } from '@/portals'
+import { PortalTarget } from '../../../portals'
 
 import './maja-modal-overlay-target.css'
 

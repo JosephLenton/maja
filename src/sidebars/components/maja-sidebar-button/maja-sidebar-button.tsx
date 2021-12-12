@@ -1,6 +1,6 @@
 import React from 'react'
-import { BareButton } from '@/buttons/maja-bare-button'
-import { ButtonBase, ButtonCoreProps } from '@/buttons/bases/maja-button-base'
+import { BareButton } from '../../../buttons/maja-bare-button'
+import { ButtonBase, ButtonCoreProps } from '../../../buttons/bases/maja-button-base'
 
 import './maja-sidebar-button.css'
 

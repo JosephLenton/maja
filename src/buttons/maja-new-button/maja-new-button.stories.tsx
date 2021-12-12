@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { NewButton as NewButtonComponent } from '@'
+import { NewButton as NewButtonComponent } from '.'
 
 export default {
   title: 'Buttons/NewButton',

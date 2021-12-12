@@ -1,6 +1,3 @@
-const path = require('path')
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
-
 module.exports = {
   styles: [
     "../src/core/css/*.css",
@@ -23,9 +20,4 @@ module.exports = {
       },
     },
   ],
-
-  webpackFinal: async config => {
-    config.resolve.plugins = [new TsconfigPathsPlugin()];
-    return config;
-  },
 }

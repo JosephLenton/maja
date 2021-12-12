@@ -1,7 +1,7 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { Sidebar as SidebarComponent } from '.'
-import { P, Button, Input } from '@'
+import { P, Button, Input } from '../../..'
 import { ExampleLongSidebar } from '../maja-sidebar/examples'
 
 export default {
@@ -35,6 +35,6 @@ export const SidebarOfAssortedItems = () => {
   return <SidebarComponent>
     <P>I am text</P>
     <Button>Click me</Button>
-    <Input type="number" />
+    <Input type="number" value={123} onChange={() => {}} />
   </SidebarComponent>
 }

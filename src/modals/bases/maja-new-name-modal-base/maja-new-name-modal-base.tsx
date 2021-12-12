@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { MajaModalConfirmBase } from '../maja-confirm-modal-base'
-import { Label } from '@/forms'
-import { Input } from '@/forms'
-import { Form } from '@/forms'
+import { Label } from '../../../forms'
+import { Input } from '../../../forms'
+import { Form } from '../../../forms'
 
 export interface MajaNewNameModalBaseProps {
   title: string

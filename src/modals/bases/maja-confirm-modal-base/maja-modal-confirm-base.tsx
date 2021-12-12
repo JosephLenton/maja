@@ -1,7 +1,7 @@
 import React from 'react'
 import { Modal } from './../../components/maja-modal'
-import { Button } from '@/buttons'
-import { H2 } from '@/headings'
+import { Button } from '../../../buttons'
+import { H2 } from '../../../headings'
 
 import './maja-modal-confirm-base.css'
 

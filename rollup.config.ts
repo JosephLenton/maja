@@ -1,6 +1,5 @@
 import typescript from '@rollup/plugin-typescript'
 import postcss from 'rollup-plugin-postcss'
-import ttypescript from 'ttypescript'
 
 export default {
   input: 'src/index.ts',
@@ -21,14 +20,6 @@ export default {
     }),
     typescript({
       tsconfig: './tsconfig.json',
-      typescript: ttypescript,
-      exclude: [
-        "**/__tests__",
-        "**/*.test.ts",
-        "**/*.stories.ts",
-        "**/*.stories.tsx",
-        "**/examples.tsx",
-      ],
     })
   ],
   onwarn: warning => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { BareButton as BareButtonComponent, BareButtonProps } from '@/buttons'
+import { BareButton as BareButtonComponent, BareButtonProps } from '../../buttons'
 
 export default {
   title: 'Buttons/BareButton',

@@ -11,7 +11,7 @@ export default {
   },
 } as ComponentMeta<typeof EditorCardButton>
 
-export const EnabledButton = () => {
+export const CardWithButtons = () => {
   return <EditorCard>
     <EditorCardButton>A</EditorCardButton>
     <EditorCardButton disabled>B</EditorCardButton>
@@ -19,3 +19,4 @@ export const EnabledButton = () => {
     <EditorCardButton selected disabled>D</EditorCardButton>
   </EditorCard>
 }
+CardWithButtons.storyName = 'EditorCardButton'

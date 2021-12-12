@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import classnames from 'classnames'
-import { Button, LinkButton } from '@/buttons'
-import { Card } from '@/surfaces'
+import { Button, LinkButton } from '../../buttons'
+import { Card } from '../../surfaces'
 
 import './maja-dropdown.css'
 

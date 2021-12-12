@@ -1,6 +1,6 @@
 import React from 'react'
-import { ListBase } from '@/forms/bases/maja-list-base'
-import { Button } from '@/buttons/maja-button'
+import { ListBase } from '../../forms/bases/maja-list-base'
+import { Button } from '../../buttons/maja-button'
 
 import './maja-list.css'
 

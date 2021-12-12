@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Sidebar, SidebarProps } from '../maja-sidebar'
 import { CollapsableSidebarButton } from '../../internal-components/maja-collapsable-sidebar-button'
-import { BareButton } from '@/buttons'
+import { BareButton } from '../../../buttons'
 import classnames from 'classnames'
 
 import './style.css'

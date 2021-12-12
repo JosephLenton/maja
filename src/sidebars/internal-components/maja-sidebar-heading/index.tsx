@@ -1,5 +1,5 @@
 import React from 'react'
-import { H2 } from '@/headings'
+import { H2 } from '../../../headings'
 import classnames from 'classnames'
 
 import './style.css'

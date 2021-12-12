@@ -1,5 +1,5 @@
 import React from 'react'
-import { HBase, HCoreProps } from '@/headings/bases/h-base'
+import { HBase, HCoreProps } from '../../bases/h-base'
 
 import './maja-h2.css'
 

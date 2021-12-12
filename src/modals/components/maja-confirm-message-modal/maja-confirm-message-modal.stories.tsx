@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { ConfirmMessageModal as ConfirmMessageModalComponent } from '@'
+import { ConfirmMessageModal as ConfirmMessageModalComponent } from '.'
 
 const ARG_TYPES = {
   title: {

@@ -1,4 +1,4 @@
-import { MajaContext, ModalOverlayTarget, Card } from '@'
+import { MajaContext, ModalOverlayTarget, Card } from '../src'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

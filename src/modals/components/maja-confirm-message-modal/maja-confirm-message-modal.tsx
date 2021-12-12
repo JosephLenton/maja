@@ -1,5 +1,5 @@
 import React from 'react'
-import { P } from 'text'
+import { P } from '../../../text'
 import { MajaModalConfirmBase } from '../../bases/maja-confirm-modal-base'
 
 export interface ConfirmMessageModalProps {

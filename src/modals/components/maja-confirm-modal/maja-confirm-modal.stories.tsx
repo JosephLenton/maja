@@ -1,7 +1,7 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { ConfirmModal as ConfirmModalComponent } from '@'
-import { Form, Label, Input } from '@'
+import { ConfirmModal as ConfirmModalComponent } from '.'
+import { Form, Label, Input } from '../../..'
 
 const ARG_TYPES = {
   title: {
@@ -41,8 +41,8 @@ export const WithContent = (args) => {
     onConfirm={() => {}}
   >
     <Form onSubmit={() => {}}>
-      <Label>Num kittens <Input type="number" value={123}/></Label>
-      <Label>Num puppies <Input type="number" value={456}/></Label>
+      <Label>Num kittens <Input type="number" value={123} onChange={() => {}}/></Label>
+      <Label>Num puppies <Input type="number" value={456} onChange={() => {}}/></Label>
     </Form>
   </ConfirmModalComponent>
 }

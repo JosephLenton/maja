@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { NewModal as NewModalComponent } from '@'
+import { NewModal as NewModalComponent } from '.'
 
 export default {
   title: 'Modals/NewModal',

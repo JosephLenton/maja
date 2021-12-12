@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { DeleteModal as DeleteModalComponent } from '@'
+import { DeleteModal as DeleteModalComponent } from '.'
 
 const ARG_TYPES = {
   name: {
