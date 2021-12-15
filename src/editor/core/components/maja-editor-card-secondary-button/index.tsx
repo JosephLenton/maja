@@ -3,13 +3,13 @@ import { ButtonBase, ButtonCoreProps } from '../../../../buttons/bases/maja-butt
 
 import './style.css'
 
-export interface EditorCardButtonProps extends ButtonCoreProps {
+export interface EditorCardSecondaryButtonProps extends ButtonCoreProps {
   className ?: string
 }
 
-export const EditorCardButton : React.FunctionComponent<EditorCardButtonProps> = props => {
+export const EditorCardSecondaryButton : React.FunctionComponent<EditorCardSecondaryButtonProps> = props => {
   return <ButtonBase
-      baseClassName="maja-editor-card-button"
+      baseClassName="maja-editor-card-secondary-button"
       {...props}
   >
     {props.children}

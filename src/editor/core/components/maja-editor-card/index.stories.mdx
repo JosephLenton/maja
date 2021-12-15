@@ -12,7 +12,23 @@ The editor card exists to provide floating content on top of the editor canvas a
 
 It aims to hold multiple buttons, and similar custom components.
 
+### Vertical (default)
+
+Most editor cards are expected to be vertical. With buttons going from top to bottom.
+
 <EditorCard>
+  <EditorCardButton>+</EditorCardButton>
+  <EditorCardButton>-</EditorCardButton>
+  <EditorCardButton>🗑️</EditorCardButton>
+  <EditorCardButton>💾</EditorCardButton>
+  <EditorCardButton>😍</EditorCardButton>
+</EditorCard>
+
+### Horizontal
+
+Horizontal layouts also exist for certain control types. For example the `UndoRedoControls` uses a horizontal card.
+
+<EditorCard direction="horizontal">
   <EditorCardButton>+</EditorCardButton>
   <EditorCardButton>-</EditorCardButton>
   <EditorCardButton>🗑️</EditorCardButton>

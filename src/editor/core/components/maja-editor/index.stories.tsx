@@ -5,6 +5,7 @@ import { ExampleFullEditor, ExamplePartialEditor } from './examples'
 import { ExampleEditorCard } from '../maja-editor-card/examples'
 import { ExampleEditorZoomControls } from '../../../complex/components/maja-editor-zoom-controls/examples'
 import { Point2D } from '@maja-ui/util'
+import { ExampleEditorCardSecondaryButtons } from '../maja-editor-card-secondary-button/examples'
 
 export default {
   title: 'Editor/Editor',
@@ -60,13 +61,26 @@ function ExamplePointerCanvas() {
       style={{ position: 'relative', width: '100%', height: '100%', background: 'pink' }}
   >
     {position && <div style={{
-      transform: 'translate(-50%, -50%)',
       pointerEvents: 'none',
-      borderRadius: '50%',
       position: 'absolute',
       left: `${position.x}px`, top: `${position.y}px`,
-      width: '24px', height: '24px',
-      background: 'red',
-    }} />}
+    }}>
+      <div style={{
+        transform: 'translateX(-50%)',
+        marginTop: '20px',
+      }}>
+        <ExampleEditorCardSecondaryButtons />
+      </div>
+
+      <div style={{
+        transform: 'translate(-50%, -50%)',
+        borderRadius: '50%',
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: '24px', height: '24px',
+        background: 'red',
+      }} />
+    </div>}
   </div>
 }
