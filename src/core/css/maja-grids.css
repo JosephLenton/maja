@@ -7,11 +7,11 @@
   --maja-grid-four: 32px;
   --maja-grid-five: 40px;
 
-  --maja-negative-grid-quarter: -2px;
-  --maja-negative-grid-half: -4px;
-  --maja-negative-grid-one: -8px;
-  --maja-negative-grid-two: -16px;
-  --maja-negative-grid-three: -24px;
-  --maja-negative-grid-four: -32px;
-  --maja-negative-grid-five: -40px;
+  --maja-grid-negative-quarter: -2px;
+  --maja-grid-negative-half: -4px;
+  --maja-grid-negative-one: -8px;
+  --maja-grid-negative-two: -16px;
+  --maja-grid-negative-three: -24px;
+  --maja-grid-negative-four: -32px;
+  --maja-grid-negative-five: -40px;
 }

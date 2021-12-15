@@ -3,7 +3,7 @@
   --maja-margin: var(--maja-grid-two);
   --maja-margin--large: var(--maja-grid-four);
 
-  --maja-negative-margin-space: var(--maja-negative-grid-one);
-  --maja-negative-margin: var(--maja-negative-grid-two);
-  --maja-negative-margin--large: var(--maja-negative-grid-four);
+  --maja-negative-margin-space: var(--maja-grid-negative-one);
+  --maja-negative-margin: var(--maja-grid-negative-two);
+  --maja-negative-margin--large: var(--maja-grid-negative-four);
 }
