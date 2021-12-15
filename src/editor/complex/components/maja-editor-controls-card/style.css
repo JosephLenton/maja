@@ -8,6 +8,7 @@
   box-sizing: border-box;
   background: var(--maja-ui-background__editor--secondary);
   overflow: hidden;
+  flex-shrink: 0;
 
   &__right {
     display: grid;
