@@ -10,6 +10,7 @@
   background: var(--maja-ui-background__editor);
   color: var(--maja-ui-text);
   overflow: hidden;
+  position: relative;
 
   &--direction-vertical {
     /* Do nothing. */
