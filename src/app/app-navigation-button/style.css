@@ -1,0 +1,30 @@
+.app-navigation-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 64px;
+  border-radius: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-width: 0;
+  padding: var(--maja-margin);
+
+  &--selected {
+    background: transparent;
+  }
+
+  &__text {
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: var(--maja-grid-quarter);
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+  }
+
+  &--selected &__text {
+    border-bottom-color: var(--ui-border--selected);
+  }
+}

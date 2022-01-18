@@ -1,0 +1,21 @@
+.app-navigation {
+  display: flex;
+  grid-auto-flow: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 0 var(--maja-margin);
+  justify-content: flex-start;
+  grid-gap: 0;
+  background: var(--maja-ui-background--primary);
+  border-bottom: 1px solid var(--maja-ui-border);
+  box-shadow: var(--maja-ui-box-shadow--card);
+  overflow: hidden;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+  min-height: calc(6.5 * var(--maja-grid-one));
+
+  &__save {
+    margin-left: auto;
+  }
+}
