@@ -1,19 +1,27 @@
 .maja-select {
   background: var(--maja-ui-background);
-  border: 1px solid var(--maja-ui-border--unselected);
+  color: var(--maja-ui-text);
+  border: 1px solid var(--maja-ui-border);
   cursor: pointer;
-  padding: 4px 8px;
-  font-size: 13px;
+  font-family: var(--maja-font-family-body);
+  font-weight: var(--maja-font-weight-normal);
+  font-size: var(--maja-font-size-normal);
+  line-height: var(--maja-line-height-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: var(--maja-grid-half) var(--maja-grid-one);
 
   &:hover {
+    border-color: var(--maja-ui-border--selectable);
     color: var(--maja-ui-text--selectable);
   }
 
-  &--selected {
+  &:focus {
+    border-color: var(--maja-ui-border--selected);
     color: var(--maja-ui-text--selected);
   }
 
-  &--disabled {
+  &:disabled {
     color: var(--maja-ui-text--disabled);
   }
 }

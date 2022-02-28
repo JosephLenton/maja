@@ -14,7 +14,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding: var(--maja-grid-half) var(--maja-grid-one);
 
-  &--disabled {
+  &:disabled {
     border-color: var(--maja-ui-text--disabled);
   }
 

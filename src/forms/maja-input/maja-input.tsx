@@ -1,8 +1,9 @@
 import React from 'react'
 import classnames from 'classnames'
+
 import './maja-input.css'
 
-type BaseProps = {
+export type InputBaseProps = {
   className ?: string
   selected ?: boolean
   disabled ?: boolean
@@ -13,18 +14,18 @@ type BaseProps = {
   autoFocus ?: boolean
 }
 
-type InputProps =
-  | BaseProps & {
+export type InputProps =
+  | InputBaseProps & {
     type: 'text'
     value: string
     onChange: (value: string) => void
   }
-  | BaseProps & {
+  | InputBaseProps & {
     type: 'number'
     value: number
     onChange: (value: number) => void
   }
-  | BaseProps & {
+  | InputBaseProps & {
     type: 'checkbox'
     value: boolean
     onChange: (value: boolean) => void
@@ -34,7 +35,6 @@ export const Input : React.FunctionComponent<InputProps> = props => {
   const className = classnames({
     'maja-input': true,
     'maja-input--selected': props.selected,
-    'maja-input--disabled': props.disabled,
     [props.className || '']: !!props.className,
   })
 
