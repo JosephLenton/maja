@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Select, SelectProps } from "./maja-select"
+import { SidebarSelect, SidebarSelectProps } from "./maja-sidebar-select"
 
 const EXAMPLE_OPTIONS = [
   {
@@ -20,12 +20,12 @@ const EXAMPLE_OPTIONS = [
   },
 ]
 
-export const SelectExample = (props: Partial<SelectProps<string>>): React.ReactElement => {
+export const SidebarSelectExample = (props: Partial<SidebarSelectProps<string>>): React.ReactElement => {
   const [selectedID, setSelectedID] = useState(props.selectedID)
 
-  return <Select
+  return <SidebarSelect
     options={EXAMPLE_OPTIONS}
-    placeholder="Select Animal"
+    placeholder="Pick Animal"
     selectedID={selectedID}
     onSelect={setSelectedID}
     {...props}

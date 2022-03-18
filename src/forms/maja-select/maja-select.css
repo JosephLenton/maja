@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
   padding: var(--maja-grid-half) var(--maja-grid-one);
 
+  &--placeholder {
+    color: var(--maja-ui-text--unselected);
+  }
+
   &:hover {
     border-color: var(--maja-ui-border--selectable);
     color: var(--maja-ui-text--selectable);

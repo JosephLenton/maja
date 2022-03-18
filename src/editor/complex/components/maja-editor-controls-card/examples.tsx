@@ -1,7 +1,7 @@
 import React from 'react'
 import { EditorControlsCard, EditorControlsCardProps } from '.'
 import { H1, P } from '../../../..'
-import { ExampleLongSidebar, ExampleAnimalSidebar } from './../../../../sidebars/components/maja-sidebar/examples'
+import { ExampleLongSidebar, ExampleAnimalSidebar } from './../../../../sidebars/components/maja-sidebar/maja-sidebar.examples'
 
 export const ExampleEditorControlsCard : React.VoidFunctionComponent<Partial<EditorControlsCardProps>> = props => {
   return <EditorControlsCard

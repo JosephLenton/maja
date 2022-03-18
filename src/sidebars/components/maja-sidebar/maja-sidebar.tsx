@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { concatClassNames } from '@maja-ui/util'
 import { SidebarHeading } from '../../internal-components/maja-sidebar-heading'
+import { concatClassNames } from '@maja-ui/util'
 
-import './style.css'
+import './maja-sidebar.css'
 
 export interface SidebarProps {
   className ?: string

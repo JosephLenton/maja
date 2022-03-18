@@ -8,7 +8,7 @@
   position: relative;
 
   &__content {
-    padding: 0 var(--maja-margin);
+    padding: 0 var(--maja-margin-space);
     display: grid;
     grid-auto-rows: min-content;
     justify-content: stretch;

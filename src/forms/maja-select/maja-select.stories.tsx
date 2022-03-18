@@ -16,6 +16,7 @@ const SelectDom = SelectExample.bind({})
 export const Select = () => {
   return <>
     <SelectDom />
+    <SelectDom selectedID="penguin" />
     <SelectDom disabled />
   </>
 }

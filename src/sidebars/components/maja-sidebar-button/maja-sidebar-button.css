@@ -7,9 +7,9 @@
   padding: 0;
   padding-right: var(--maja-margin-space);
   box-sizing: border-box;
-  margin: 0 0 0 var(--maja-negative-margin);
+  margin: 0 0 0 var(--maja-negative-margin-space);
   min-width: 100%;
-  width: calc(100% + 2 * var(--maja-margin));
+  width: calc(100% + 2 * var(--maja-margin-space));
 
   &:hover {
     background: var(--maja-ui-background--selectable);
