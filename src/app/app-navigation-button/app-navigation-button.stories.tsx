@@ -12,8 +12,11 @@ export default {
   },
 } as ComponentMeta<typeof AppNavigationButtonComponent>
 
-const Template: ComponentStory<typeof AppNavigationButtonComponent> = (props: AppNavigationButtonProps) => {
-  return <AppNavigationButtonComponent {...props}>{props.children || 'Click me'}</AppNavigationButtonComponent>
+const Template: ComponentStory<React.FunctionComponent<Partial<AppNavigationButtonProps>>> = (props: Partial<AppNavigationButtonProps>) => {
+  return <AppNavigationButtonComponent
+    onClick={() => {}}
+    {...props}
+  >{props.children || 'Click me'}</AppNavigationButtonComponent>
 }
 
 export const AppNavigationButton = () => {

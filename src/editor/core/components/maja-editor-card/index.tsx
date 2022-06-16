@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import classnames from 'classnames'
 
 import './style.css'
 
-export interface EditorCardProps {
+export interface EditorCardProps extends PropsWithChildren {
   className ?: string
 
   direction ?: EditorCardDirection

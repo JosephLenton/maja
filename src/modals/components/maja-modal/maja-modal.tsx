@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { MODAL_OVERLAY_PORTAL_TARGET } from '../../constants'
 import { Card } from '../../../surfaces'
 import { Portal } from '../../../portals'
@@ -6,7 +6,7 @@ import { concatClassNames } from '@maja-ui/util'
 
 import './maja-modal.css'
 
-export interface ModalProps {
+export interface ModalProps extends PropsWithChildren {
   className ?: string
 
   onClose ?: () => void,

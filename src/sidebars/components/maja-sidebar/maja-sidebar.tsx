@@ -1,10 +1,10 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState, PropsWithChildren } from 'react'
 import { SidebarHeading } from '../../internal-components/maja-sidebar-heading'
 import { concatClassNames } from '@maja-ui/util'
 
 import './maja-sidebar.css'
 
-export interface SidebarProps {
+export interface SidebarProps extends PropsWithChildren {
   className ?: string
   title ?: string
 }

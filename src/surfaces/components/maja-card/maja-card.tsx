@@ -1,9 +1,9 @@
-import React, { KeyboardEvent } from 'react'
+import React, { PropsWithChildren, KeyboardEvent } from 'react'
 import { concatClassNames } from '@maja-ui/util'
 
 import './maja-card.css'
 
-export interface CardProps {
+export interface CardProps extends PropsWithChildren {
   className ?: string
 
   onKeyUp ?: (ev: KeyboardEvent) => void

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { concatClassNames } from '@maja-ui/util'
 
 import './maja-context.css'
 
-export interface MajaContextProps {
+export interface MajaContextProps extends PropsWithChildren {
   className ?: string
 }
 

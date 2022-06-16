@@ -1,9 +1,9 @@
-import React, { createRef, useEffect, useState } from 'react'
+import React, { PropsWithChildren, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
 
 const CANCEL_FUNCTIONS : Map<string, () => void> = new Map()
 
-export interface PortalProps {
+export interface PortalProps extends PropsWithChildren {
   target: string
   onUnmount ?: () => void
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import classnames from 'classnames'
 
 import './maja-button-base.css'
@@ -8,7 +8,7 @@ export interface ButtonBaseProps extends ButtonCoreProps {
   baseClassName: string
 }
 
-export interface ButtonCoreProps {
+export interface ButtonCoreProps extends PropsWithChildren {
   className ?: string
   selected ?: boolean
   disabled ?: boolean

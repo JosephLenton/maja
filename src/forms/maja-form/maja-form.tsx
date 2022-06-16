@@ -1,9 +1,8 @@
-
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 
 import './maja-form.css'
 
-export interface FormProps {
+export interface FormProps extends PropsWithChildren {
   className ?: string
   onSubmit: () => void
 }

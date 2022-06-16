@@ -1,9 +1,9 @@
-import React from 'react'
-import { alwaysMap, concatClassNames } from '@maja-ui/util'
+import React, { PropsWithChildren } from 'react'
+import { concatClassNames } from '@maja-ui/util'
 
 import './style.css'
 
-export interface EditorProps {
+export interface EditorProps extends PropsWithChildren {
   className ?: string
 
   sidebarChild ?: React.ReactNode

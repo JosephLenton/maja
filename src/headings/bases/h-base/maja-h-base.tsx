@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import classnames from 'classnames'
 
 import './maja-h-base.css'
@@ -8,7 +8,7 @@ export interface HBaseProps extends HCoreProps {
   baseElementTag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-export interface HCoreProps {
+export interface HCoreProps extends PropsWithChildren {
   className ?: string
 }
 

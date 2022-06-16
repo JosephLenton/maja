@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { Modal } from './../../components/maja-modal'
 import { Button } from '../../../buttons'
 import { H2 } from '../../../headings'
 
 import './maja-modal-confirm-base.css'
 
-export interface MajaModalConfirmBaseProps {
+export interface MajaModalConfirmBaseProps extends PropsWithChildren {
   title: string
   cancelText : string
   confirmText : string

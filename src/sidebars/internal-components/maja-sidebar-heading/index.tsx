@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { H2 } from '../../../headings'
 import classnames from 'classnames'
 
 import './style.css'
 
-export interface SidebarHeadingProps {
+export interface SidebarHeadingProps extends PropsWithChildren {
   className?: string
   bottomBorder: boolean
 }

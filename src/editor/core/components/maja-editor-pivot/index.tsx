@@ -1,9 +1,9 @@
+import React, { PropsWithChildren } from 'react'
 import { Point2D } from '@maja-ui/util'
-import React from 'react'
 
 import './style.css'
 
-export interface EditorCanvasPivotProps {
+export interface EditorCanvasPivotProps extends PropsWithChildren {
   className ?: string
   offset: Point2D
 }

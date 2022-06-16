@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 
 import './maja-list-base.css'
 
-export interface ListBaseProps extends ListBaseCoreProps {
+export interface ListBaseProps extends ListBaseCoreProps, PropsWithChildren {
   baseClassName: string
 }
 

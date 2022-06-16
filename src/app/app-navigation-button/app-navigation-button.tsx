@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from './../../buttons'
 import { concatClassNames } from '@maja-ui/util'
 
-import './style.css'
+import './app-navigation-button.css'
 
 export interface AppNavigationButtonProps {
   className ?: string

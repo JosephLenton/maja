@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 
 import './maja-toolbar.css'
 
-export interface ToolbarProps {
+export interface ToolbarProps extends PropsWithChildren {
   className ?: string
 }
 

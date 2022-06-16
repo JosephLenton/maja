@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { MODAL_OVERLAY_PORTAL_TARGET } from '../../constants'
 import { PortalTarget } from '../../../portals'
 
 import './maja-modal-overlay-target.css'
 
-export interface ModalOverlayTargetProps {
+export interface ModalOverlayTargetProps extends PropsWithChildren {
 }
 
 export const ModalOverlayTarget : React.VoidFunctionComponent<ModalOverlayTargetProps> = () => {

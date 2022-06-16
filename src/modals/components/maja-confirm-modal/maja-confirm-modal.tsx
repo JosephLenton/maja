@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { MajaModalConfirmBase } from './../../bases/maja-confirm-modal-base'
 
-export interface ConfirmModalProps {
+export interface ConfirmModalProps extends PropsWithChildren {
   title: string
   cancelText ?: string
   confirmText ?: string

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { concatClassNames } from '@maja-ui/util'
 
 import './maja-p.css'
 
-export interface PProps {
+export interface PProps extends PropsWithChildren {
   className ?: string
 }
 

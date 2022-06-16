@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 
 import './maja-label.css'
 
-export interface LabelProps {
+export interface LabelProps extends PropsWithChildren {
   className ?: string
 }
 
