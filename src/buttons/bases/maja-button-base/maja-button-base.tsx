@@ -3,10 +3,16 @@ import classnames from 'classnames'
 
 import './maja-button-base.css'
 
-export interface ButtonBaseProps extends ButtonCoreProps {
-  element?: 'div' | 'button' | 'a'
-  baseClassName: string
-}
+export type ButtonBaseProps = Omit<ButtonCoreProps, 'onClick'>
+  & {
+    baseClassName: string
+  }
+  & ({
+    element?: 'button' | 'a'
+    onClick ?: () => void
+  } | {
+    element: 'div'
+  })
 
 export interface ButtonCoreProps extends PropsWithChildren {
   className ?: string
@@ -17,25 +23,25 @@ export interface ButtonCoreProps extends PropsWithChildren {
 }
 
 export const ButtonBase : React.FunctionComponent<ButtonBaseProps> = props => {
-  const className = buildClassName(props)
   const Element = props.element || 'button'
 
   return <Element
-      className={className}
-      onClick={!props.disabled ? props.onClick : undefined}
-      disabled={!! props.disabled}
+      className={getClassName(props)}
+      onClick={getOnClick(props)}
+      disabled={getDOMDisabled(props)}
       title={props.tooltip}
   >
     {props.children}
   </Element>
 }
 
-function buildClassName(props: ButtonBaseProps): string {
+function getClassName(props: ButtonBaseProps): string {
   const classNameRaw = {
     'maja-button-base': true,
     'maja-button-base--selected': props.selected,
     [props.baseClassName]: true,
     [`${props.baseClassName}--selected`]: props.selected,
+    [`${props.baseClassName}--disabled`]: props.disabled,
   }
 
   if (props.className) {
@@ -46,4 +52,24 @@ function buildClassName(props: ButtonBaseProps): string {
   }
 
   return classnames(classNameRaw)
+}
+
+function getDOMDisabled(props: ButtonBaseProps): undefined|boolean {
+  if (props.element === 'div') {
+    return false
+  }
+
+  return props.disabled
+}
+
+function getOnClick(props: ButtonBaseProps): undefined|(() => void) {
+  if (props.element === 'div') {
+    return undefined
+  }
+
+  if (props.disabled) {
+    return undefined
+  }
+
+  return props.onClick
 }

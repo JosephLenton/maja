@@ -10,6 +10,7 @@
   margin: 0 0 0 var(--maja-negative-margin-space);
   min-width: 100%;
   width: calc(100% + 2 * var(--maja-margin-space));
+  position: relative;
 
   &:hover {
     background: var(--maja-ui-background--selectable);
@@ -35,8 +36,14 @@
     }
   }
 
-  &:disabled {
+  &--disabled {
     background: transparent;
+
+    &.maja-sidebar-button--selected {
+      background: var(--maja-ui-background--selected);
+    }
+
+    pointer-events: none;
   }
 
   &__controls {
