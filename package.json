@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "@maja-ui/util": "^3.2.0"
+    "@maja-ui/util": "^3.3.0"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
