@@ -18,11 +18,10 @@ export interface InputWithNewProps {
 
 export const InputWithNew : React.FunctionComponent<InputWithNewProps> = props => {
   const [value, setValue] = useState("")
-  const inputRef = useRef<HTMLInputElement>(null)
+  const [isValid, setValid] = useState(true)
 
   const onSubmit = () => {
-    const inputDom = inputRef.current
-    if ( ! inputDom?.validity.valid ) {
+    if (!isValid) {
       return
     }
 
@@ -38,7 +37,7 @@ export const InputWithNew : React.FunctionComponent<InputWithNewProps> = props =
       type="text"
       value={value}
       onChange={setValue}
-      inputRef={inputRef}
+      onValidityChange={setValid}
       disabled={props.disabled}
       placeholder={props.placeholder || DEFAULT_PLACEHOLDER}
       pattern={props.pattern}

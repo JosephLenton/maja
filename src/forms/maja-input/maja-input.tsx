@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import classnames from 'classnames'
 
 import './maja-input.css'
@@ -8,7 +8,6 @@ export type InputBaseProps = {
   selected ?: boolean
   disabled ?: boolean
   onClick ?: () => void
-  inputRef ?: React.RefObject<HTMLInputElement>
   pattern ?: string
   autoFocus ?: boolean
 }
@@ -23,6 +22,7 @@ export type InputTextProps = InputBaseProps & {
   value: string
   placeholder ?: string
   onChange: (value: string) => void
+  onValidityChange?: (isValid: boolean) => void
 }
 
 export type InputNumberProps = InputBaseProps & {
@@ -31,6 +31,7 @@ export type InputNumberProps = InputBaseProps & {
   min?: number
   max?: number
   onChange: (value: number) => void
+  onValidityChange?: (isValid: boolean) => void
 }
 
 export type InputCheckboxProps = InputBaseProps & {
@@ -46,6 +47,7 @@ export const Input : React.FunctionComponent<InputProps> = props => {
     [props.className || '']: !!props.className,
   })
 
+  const validityState = newValidityState(props)
   const value = parseInputValue(props)
 
   return <input
@@ -53,7 +55,7 @@ export const Input : React.FunctionComponent<InputProps> = props => {
       onClick={!props.disabled ? props.onClick : undefined}
       disabled={props.disabled || false}
       pattern={props.pattern}
-      ref={props.inputRef}
+      ref={validityState?.inputRef}
       type={props.type}
       value={value}
       min={props.type === 'number' ? props.min : undefined}
@@ -65,6 +67,10 @@ export const Input : React.FunctionComponent<InputProps> = props => {
         if ( props.type === 'checkbox' ) {
           props.onChange(ev.target.checked)
           return
+        }
+
+        if (validityState) {
+          handleValidity(props, validityState)
         }
 
         if ( props.type === 'number' ) {
@@ -92,4 +98,48 @@ function parseInputValue(props: InputProps): string|number|undefined {
   }
 
   return undefined
+}
+
+interface ValidityState {
+  inputRef: React.RefObject<HTMLInputElement>
+  isValid: boolean
+  setValidity: (isValid: boolean) => void
+}
+
+function newValidityState(props: InputProps): null|ValidityState {
+  if (props.type === 'checkbox') {
+    return null
+  }
+
+  if (props.onValidityChange === undefined) {
+    return null
+  }
+
+  const [isValid, setValidity] = useState(true)
+  return {
+    inputRef: useRef<HTMLInputElement>(null),
+    isValid,
+    setValidity,
+  }
+}
+
+function handleValidity(props: InputProps, validityState: ValidityState) {
+  if (props.type === 'checkbox') {
+    return
+  }
+
+  if (!props.onValidityChange) {
+    return
+  }
+
+  const inputDom = validityState.inputRef.current
+  if (!inputDom) {
+    return
+  }
+
+  const isValid = inputDom.validity.valid
+  if (isValid !== validityState.isValid) {
+    validityState.setValidity(isValid)
+    props.onValidityChange(isValid)
+  }
 }
