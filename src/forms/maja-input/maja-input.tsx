@@ -8,28 +8,36 @@ export type InputBaseProps = {
   selected ?: boolean
   disabled ?: boolean
   onClick ?: () => void
-  placeholder ?: string
   inputRef ?: React.RefObject<HTMLInputElement>
   pattern ?: string
   autoFocus ?: boolean
 }
 
 export type InputProps =
-  | InputBaseProps & {
-    type: 'text'
-    value: string
-    onChange: (value: string) => void
-  }
-  | InputBaseProps & {
-    type: 'number'
-    value: number
-    onChange: (value: number) => void
-  }
-  | InputBaseProps & {
-    type: 'checkbox'
-    value: boolean
-    onChange: (value: boolean) => void
-  }
+  | InputTextProps
+  | InputNumberProps
+  | InputCheckboxProps
+
+export type InputTextProps = InputBaseProps & {
+  type: 'text'
+  value: string
+  placeholder ?: string
+  onChange: (value: string) => void
+}
+
+export type InputNumberProps = InputBaseProps & {
+  type: 'number'
+  value: number
+  min?: number
+  max?: number
+  onChange: (value: number) => void
+}
+
+export type InputCheckboxProps = InputBaseProps & {
+  type: 'checkbox'
+  value: boolean
+  onChange: (value: boolean) => void
+}
 
 export const Input : React.FunctionComponent<InputProps> = props => {
   const className = classnames({
@@ -48,8 +56,10 @@ export const Input : React.FunctionComponent<InputProps> = props => {
       ref={props.inputRef}
       type={props.type}
       value={value}
+      min={props.type === 'number' ? props.min : undefined}
+      max={props.type === 'number' ? props.max : undefined}
       checked={props.type === 'checkbox' && props.value}
-      placeholder={props.placeholder}
+      placeholder={props.type === 'text' ? props.placeholder : undefined}
       autoFocus={props.autoFocus}
       onChange={ev => {
         if ( props.type === 'checkbox' ) {

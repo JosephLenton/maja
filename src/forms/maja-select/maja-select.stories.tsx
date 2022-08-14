@@ -1,3 +1,4 @@
+import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { Select as SelectComponent } from './maja-select'
 import { SelectExample } from './maja-select.examples'
