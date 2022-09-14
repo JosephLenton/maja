@@ -106,6 +106,7 @@ dist
 
 # No lock files
 /yarn.lock
+/pnpm-lock.yaml
 /package-lock.json
 /npm-shrinkwrap.json
 /lib

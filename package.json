@@ -21,15 +21,15 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "yarn run clean && yarn run build:src && yarn run build:link-css",
+    "build": "pnpm run clean && pnpm run build:src && pnpm run build:link-css",
     "build:src": "rollup --config ./rollup.config.ts --configPlugin typescript",
     "build:link-css": "sed -i $'s!//# sourceMappingURL=index.js.map!import \\'./index.css\\'\\\n//# sourceMappingURL=index.js.map!g' ./lib/index.js",
     "build:parcel": "parcel build",
-    "clean": "yarn run clean:build",
+    "clean": "pnpm run clean:build",
     "clean:build": "rimraf ./lib/*",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy": "yarn run build && yarn publish"
+    "deploy": "pnpm run build && pnpm publish"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -42,15 +42,15 @@
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@rollup/plugin-typescript": "^8.3.4",
-    "@storybook/addon-actions": "^6.5.10",
-    "@storybook/addon-essentials": "^6.5.10",
-    "@storybook/addon-links": "^6.5.10",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/cli": "^6.5.10",
-    "@storybook/react": "^6.5.10",
+    "@storybook/cli": "^6.5.12",
+    "@storybook/react": "^6.5.12",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
-    "autoprefixer": "10.4.8",
+    "autoprefixer": "10.4.11",
     "babel-loader": "^8.2.5",
     "postcss": "^8.4.16",
     "postcss-extend": "1.0.5",
