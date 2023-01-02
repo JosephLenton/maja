@@ -1,6 +1,6 @@
 {
   "name": "@maja-ui/core",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "A UI toolkit for building editors",
   "repository": {
     "type": "git",
@@ -32,37 +32,38 @@
     "deploy": "pnpm run build && pnpm publish"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
-    "@maja-ui/util": "^3.3.0"
+    "@maja-ui/util": "^3.3.0",
+    "classnames": "^2.3.2"
   },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.10",
-    "@rollup/plugin-typescript": "^8.3.4",
-    "@storybook/addon-actions": "^6.5.12",
-    "@storybook/addon-essentials": "^6.5.12",
-    "@storybook/addon-links": "^6.5.12",
+    "@babel/core": "^7.20.7",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/cli": "^6.5.12",
-    "@storybook/react": "^6.5.12",
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "autoprefixer": "10.4.11",
-    "babel-loader": "^8.2.5",
-    "postcss": "^8.4.16",
+    "@storybook/cli": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "autoprefixer": "10.4.13",
+    "postcss": "^8.4.20",
     "postcss-extend": "1.0.5",
-    "postcss-nested": "5.0.6",
+    "postcss-nested": "6.0.0",
     "postcss-nested-ancestors": "3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "require-from-string": "^2.0.2",
     "rimraf": "^3.0.2",
-    "rollup": "^2.78.0",
+    "rollup": "^3.9.0",
     "rollup-plugin-postcss": "^4.0.2",
-    "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0"
   },
   "bugs": {
     "url": "https://github.com/JosephLenton/maja/issues"
